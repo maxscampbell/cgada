@@ -1,0 +1,53 @@
+---
+title: "CGA - Playtest Data"
+format: html
+editor: visual
+---
+
+## Class Data
+
+```{r}
+#|include = FALSE
+
+# Load in relevant packages
+library(ggplot2)
+library(tidyverse)
+
+# Names vector for easy applications
+names <- c( "Class", "Entries", "Coins", "Kills", "Deaths", "Vigor.Flask.Entries", 
+            "Bandage.Entries", "Accelerator.Entries", "Echo.Bolt.Entries",
+            "Spring.Plume.Entries", "Hedge.Seed.Entries", "Risk.It.Biscuit.Entries",
+            "Nox.Bomb.Entries", "Flame.Trap.Entries", "Lava.Cake.Entries", 
+            "Smoke.Screen.Entries",
+            "Vigor.Flask.Coins", "Bandage.Coins", "Accelerator.Coins", 
+            "Echo.Bolt.Coins", "Spring.Plume.Coins", "Hedge.Seed.Coins",
+            "Risk.It.Biscuit.Coins", "Nox.Bomb.Coins", "Flame.Trap.Coins", 
+            "Lava.Cake.Coins", "Smoke.Screen.Coins"
+            )
+
+# Load in raw data and compile into list
+mar16 <- as_tibble(read.csv(".\\data\\March 16 2025.csv", TRUE))
+mar22 <- as_tibble(read.csv(".\\data\\March 22 2025.csv", TRUE))
+
+playtests <- list(mar16, mar22)
+```
+
+```{r}
+#Create some functions
+#Add dates to each raw dataset
+add_dates <- function(tib, date = "01/01/1990") {
+  dateFormatted <- as.Date(date, "%m/%d/%Y")
+  
+  result <- tib |>
+    mutate(date = dateFormatted)
+  
+  return(result)
+}
+
+combine_data <- function(tib1, tib2) {
+  result <- bind_rows(tib1, tib2)
+  return(result)
+}
+
+#Iterate through n datasets and combine them
+```
