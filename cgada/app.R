@@ -16,6 +16,10 @@ library(ggpie)
 
 # --- LOAD HELPERS/SOURCE DATA ---
 
+source("helpers.R")
+
+# --- SHINY APP CODE ---
+
 # Define UI for application that draws a histogram
 ui <- fluidPage(
 
@@ -53,6 +57,16 @@ ui <- fluidPage(
                     checkboxInput("groupByTrinket", "Group by Trinket Usage", FALSE)
                   ),
                   
+                ),
+                
+                #Main panel to display data
+                mainPanel(
+                  
+                  conditionalPanel(
+                    condition = "input.chooseClassVis == 'Class Usage'",
+                    plotOutput("classUsage")
+                  )
+                  
                 )
                 
                 ),
@@ -82,9 +96,21 @@ ui <- fluidPage(
     
 )
 
-# Define server logic required to draw a histogram
+# Define server logic required to draw the required outputs
 server <- function(input, output) {
 
+  output$classUsage <- renderPlot({
+    
+    #TODO: Add a pie chart and turn bar chart into deviation from uniform
+    
+    ggplot(cg_data_full, aes(x = Class.Name, y = Entry.Percent)) +
+      geom_bar(stat = "identity", color = "green", fill = "green") +
+      theme(legend.position = "none") +
+      xlab("Class") + ylab("% of Total Lives") +
+      labs(title = "Class Popularity (% of Total Lives Played)",
+           caption = "") +
+      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+  })
 
 }
 

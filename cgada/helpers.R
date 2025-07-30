@@ -1,14 +1,3 @@
----
-title: "CGA - Playtest Data"
-format: html
-editor: visual
----
-
-## Class Data
-
-```{r}
-#|include = FALSE
-
 # Load in relevant packages
 library(ggplot2)
 library(tidyverse)
@@ -24,7 +13,7 @@ names <- c( "Class", "Entries", "Coins", "Kills", "Deaths", "Vigor.Flask.Entries
             "Echo.Bolt.Coins", "Spring.Plume.Coins", "Hedge.Seed.Coins",
             "Risk.It.Biscuit.Coins", "Nox.Bomb.Coins", "Flame.Trap.Coins", 
             "Lava.Cake.Coins", "Smoke.Screen.Coins"
-            )
+)
 
 # Load in raw data and compile into list
 mar16 <- as_tibble(read.csv(".\\data\\March 16 2025.csv", TRUE))
@@ -32,10 +21,7 @@ mar22 <- as_tibble(read.csv(".\\data\\March 22 2025.csv", TRUE))
 
 playtests <- list(mar16, mar22)
 dates <- c("03/16/2025", "03/22/2025")
-```
 
-```{r}
-#Create some functions
 #Add dates to each raw dataset
 add_dates <- function(tib, date = "01/01/1990") {
   dateFormatted <- as.Date(date, "%m/%d/%Y")
@@ -63,10 +49,7 @@ compile <- function(tib_list, date_list) {
   
   return(tib_list[[1]])
 }
-```
 
-```{r}
-#Compile data together
 cg_data <- compile(playtests, dates)
 
 #Add statistics that we are interested in
@@ -76,16 +59,3 @@ cg_data_full <- cg_data |>
   mutate(KPE = Kills / Entries,
          CPE = Coins / Entries,
          Entry.Percent = sum(Entry.Percent))
-
-print(cg_data_full)
-```
-
-```{r}
-ggplot(cg_data_full, aes(x = Class.Name, y = Entry.Percent)) +
-  geom_bar(stat = "identity", color = "black", fill = "green") +
-  theme(legend.position = "none") +
-  xlab("Class") + ylab("% of Total Lives") +
-  labs(title = "Class Popularity (% of Total Lives Played)",
-       caption = "") +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-```
