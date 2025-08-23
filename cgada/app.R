@@ -101,8 +101,6 @@ server <- function(input, output) {
 
   output$classUsage <- renderPlot({
     
-    #TODO: Add a pie chart and turn bar chart into deviation from uniform
-    
     ggplot(cg_data_full, aes(x = Class.Name, y = Entry.Percent)) +
       geom_bar(stat = "identity", color = "green", fill = "green") +
       theme(legend.position = "none") +

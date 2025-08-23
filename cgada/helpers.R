@@ -21,13 +21,15 @@ mar22 <- as_tibble(read.csv(".\\data\\March 22 2025.csv", TRUE))
 
 playtests <- list(mar16, mar22)
 dates <- c("03/16/2025", "03/22/2025")
+versions <- c("0.12.*", "0.12.*")
 
 #Add dates to each raw dataset
-add_dates <- function(tib, date = "01/01/1990") {
+add_dates <- function(tib, date = "01/01/1990", version_input = "0.12.*") {
   dateFormatted <- as.Date(date, "%m/%d/%Y")
   
   result <- tib |>
-    mutate(date = dateFormatted)
+    mutate(date = dateFormatted,
+           version = version_input)
   
   return(result)
 }
@@ -38,9 +40,9 @@ combine <- function(tib1, tib2) {
 }
 
 #Iterate through n datasets and combine them
-compile <- function(tib_list, date_list) {
+compile <- function(tib_list, date_list, version_list) {
   for(i in 1:length(date_list)) {
-    tib_list[[i]] <- add_dates(tib_list[[i]], date = date_list[[i]])
+    tib_list[[i]] <- add_dates(tib_list[[i]], date = date_list[[i]], version = version_list[[i]])
   }
   
   for (i in 2:length(tib_list)) {
@@ -50,7 +52,7 @@ compile <- function(tib_list, date_list) {
   return(tib_list[[1]])
 }
 
-cg_data <- compile(playtests, dates)
+cg_data <- compile(playtests, dates, versions)
 
 #Add statistics that we are interested in
 cg_data_full <- cg_data |>
