@@ -58,8 +58,7 @@ suppressMessages(
   summarise(n=n()) |>
   ungroup() |> group_by(Class) |>
   summarise(sd = sd(n),
-            sum = sum(n),
-            se = sd / sqrt(sum)) |>
+            sum = sum(n)) |>
   ggplot(aes(x = Class, y = sum)) +
   geom_bar(stat = "identity", color = "black", fill = "green") +
   theme(legend.position = "none") +
@@ -161,8 +160,7 @@ suppressMessages(
   summarise(n=n()) |>
   ungroup() |> group_by(Trinket) |>
   summarise(sd = sd(n),
-            sum = sum(n),
-            se = sd / sqrt(sum)) |>
+            sum = sum(n)) |>
   ggplot(aes(x = Trinket, y = sum)) +
   geom_bar(stat = "identity", color = "black", fill = "orange") +
   theme(legend.position = "none") +
