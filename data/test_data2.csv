@@ -1,501 +1,501 @@
-"Class","Trinket","Map","Kills","Coins"
-"Griefer","Flame Trap","Bogpit",3,2
-"Cloudbreaker","Echo Bolt","Skullway",5,15
-"Vampire","Smoke Screen","Dustworks",3,38
-"Dancer","Smoke Screen","Deepgrove",4,35
-"Griefer","Smoke Screen","Skullway",0,7
-"Battlesmith","Echo Bolt","Skullway",5,39
-"Artillery","Lava Cake","Crystal",2,40
-"Artillery","Risk-it-Biscuit","Polaris",5,16
-"Hexblade","Echo Bolt","Scald",2,4
-"Ranger","Spring Plume","Graphite",5,6
-"Ranger","Bandage","Bogpit",3,25
-"Cloudbreaker","Accelerator","Polaris",0,36
-"Spectre","Vigor Flask","Scald",5,33
-"Vampire","Smoke Screen","Skullway",0,12
-"Stargazer","Lava Cake","Deepgrove",1,26
-"Skirmisher","Nox Bomb","Golden",2,9
-"Skirmisher","Flame Trap","Deepgrove",4,24
-"Stargazer","Vigor Flask","Dustworks",5,23
-"Artillery","Vigor Flask","Fissure",5,25
-"Chronomancer","Vigor Flask","Golden",3,36
-"Champion","Nox Bomb","Deepgrove",1,12
-"Spectre","Nox Bomb","Crystal",4,13
-"Griefer","Smoke Screen","Polaris",1,28
-"Battlesmith","Lava Cake","Graphite",0,38
-"Artillery","Flame Trap","Golden",3,17
-"Dancer","Flame Trap","Sunken",4,24
-"Cloudbreaker","Risk-it-Biscuit","Polaris",1,34
-"Chronomancer","Accelerator","Graphite",5,40
-"Artillery","Echo Bolt","Dustworks",4,29
-"Ranger","Smoke Screen","Scald",1,1
-"Titan","Nox Bomb","Graphite",1,22
-"Artillery","Nox Bomb","Sunken",0,15
-"Griefer","Accelerator","Dustworks",5,37
-"Cloudbreaker","Accelerator","Sunken",0,40
-"Skirmisher","Lava Cake","Sunken",3,21
-"Griefer","Risk-it-Biscuit","Bogpit",0,27
-"Griefer","Flame Trap","Polaris",0,28
-"Alchemist","Echo Bolt","Scald",3,18
-"Chronomancer","Vigor Flask","Golden",5,14
-"Spectre","Echo Bolt","Scald",2,17
-"Ranger","Bandage","Sunken",3,37
-"Ranger","Risk-it-Biscuit","Bogpit",0,20
-"Artillery","Spring Plume","Crystal",0,20
-"Artillery","Spring Plume","Fissure",3,10
-"Stargazer","Lava Cake","Scald",0,11
-"Battlesmith","Hedge Seed","Graphite",3,21
-"Artillery","Nox Bomb","Skullway",3,33
-"Hexblade","Spring Plume","Dustworks",0,4
-"Frost Knight","Spring Plume","Bogpit",5,8
-"Titan","Spring Plume","Skullway",5,38
-"Cloudbreaker","Hedge Seed","Polaris",3,12
-"Skirmisher","Echo Bolt","Deepgrove",3,25
-"Champion","Hedge Seed","Deepgrove",4,1
-"Skirmisher","Nox Bomb","Polaris",2,28
-"Stargazer","Nox Bomb","Polaris",0,39
-"Cloudbreaker","Echo Bolt","Polaris",3,37
-"Dancer","Smoke Screen","Sunken",4,14
-"Skirmisher","Vigor Flask","Golden",1,36
-"Ranger","Accelerator","Polaris",2,3
-"Frost Knight","Vigor Flask","Bogpit",1,29
-"Ranger","Flame Trap","Crystal",5,10
-"Vampire","Lava Cake","Dustworks",4,15
-"Skirmisher","Vigor Flask","Scald",4,8
-"Artillery","Echo Bolt","Fissure",0,4
-"Artillery","Echo Bolt","Golden",0,24
-"Dancer","Smoke Screen","Fissure",4,39
-"Champion","Lava Cake","Sunken",0,7
-"Hexblade","Accelerator","Dustworks",1,4
-"Cloudbreaker","Spring Plume","Dustworks",0,35
-"Frost Knight","Bandage","Scald",3,34
-"Chronomancer","Risk-it-Biscuit","Bogpit",1,30
-"Champion","Smoke Screen","Crystal",0,34
-"Alchemist","Accelerator","Graphite",1,23
-"Spectre","Flame Trap","Deepgrove",3,19
-"Battlesmith","Lava Cake","Golden",4,1
-"Titan","Vigor Flask","Golden",3,3
-"Dancer","Lava Cake","Fissure",0,10
-"Titan","Smoke Screen","Graphite",0,10
-"Skirmisher","Risk-it-Biscuit","Graphite",1,22
-"Griefer","Hedge Seed","Skullway",3,13
-"Ranger","Flame Trap","Scald",0,27
-"Frost Knight","Echo Bolt","Fissure",0,23
-"Dancer","Lava Cake","Bogpit",4,22
-"Champion","Accelerator","Deepgrove",4,10
-"Chronomancer","Vigor Flask","Graphite",4,25
-"Titan","Bandage","Sunken",4,19
-"Ranger","Echo Bolt","Graphite",0,17
-"Skirmisher","Lava Cake","Graphite",1,38
-"Griefer","Smoke Screen","Scald",1,34
-"Alchemist","Smoke Screen","Crystal",2,8
-"Skirmisher","Smoke Screen","Polaris",2,5
-"Ranger","Accelerator","Golden",4,32
-"Dancer","Risk-it-Biscuit","Polaris",3,13
-"Chronomancer","Accelerator","Deepgrove",3,20
-"Griefer","Flame Trap","Sunken",5,18
-"Ranger","Lava Cake","Fissure",2,33
-"Titan","Flame Trap","Scald",0,39
-"Hexblade","Smoke Screen","Fissure",2,19
-"Spectre","Accelerator","Skullway",4,30
-"Alchemist","Vigor Flask","Fissure",1,3
-"Hexblade","Bandage","Golden",1,17
-"Artillery","Flame Trap","Crystal",1,19
-"Stargazer","Bandage","Sunken",2,18
-"Griefer","Smoke Screen","Deepgrove",1,27
-"Hexblade","Accelerator","Scald",1,6
-"Titan","Flame Trap","Scald",0,7
-"Hexblade","Flame Trap","Scald",1,22
-"Artillery","Vigor Flask","Polaris",4,12
-"Champion","Spring Plume","Skullway",2,20
-"Cloudbreaker","Lava Cake","Skullway",1,25
-"Stargazer","Flame Trap","Crystal",1,1
-"Alchemist","Bandage","Polaris",3,18
-"Vampire","Spring Plume","Skullway",0,29
-"Frost Knight","Smoke Screen","Deepgrove",3,29
-"Ranger","Flame Trap","Skullway",2,38
-"Artillery","Risk-it-Biscuit","Fissure",0,37
-"Griefer","Flame Trap","Fissure",2,23
-"Griefer","Echo Bolt","Graphite",1,15
-"Hexblade","Hedge Seed","Skullway",4,4
-"Ranger","Smoke Screen","Crystal",5,13
-"Spectre","Smoke Screen","Sunken",0,32
-"Ranger","Lava Cake","Sunken",2,33
-"Griefer","Lava Cake","Polaris",2,21
-"Vampire","Accelerator","Dustworks",2,36
-"Dancer","Nox Bomb","Crystal",4,39
-"Spectre","Spring Plume","Golden",0,39
-"Alchemist","Echo Bolt","Bogpit",0,15
-"Battlesmith","Accelerator","Golden",3,31
-"Griefer","Smoke Screen","Deepgrove",3,40
-"Spectre","Bandage","Sunken",0,18
-"Frost Knight","Echo Bolt","Fissure",2,2
-"Battlesmith","Risk-it-Biscuit","Graphite",3,28
-"Evincer","Nox Bomb","Golden",5,19
-"Alchemist","Risk-it-Biscuit","Golden",2,6
-"Spectre","Nox Bomb","Scald",0,26
-"Chronomancer","Nox Bomb","Dustworks",4,28
-"Ranger","Lava Cake","Polaris",1,29
-"Artillery","Echo Bolt","Dustworks",2,35
-"Griefer","Risk-it-Biscuit","Deepgrove",3,6
-"Chronomancer","Accelerator","Dustworks",4,37
-"Champion","Risk-it-Biscuit","Skullway",5,17
-"Skirmisher","Accelerator","Dustworks",0,35
-"Griefer","Accelerator","Dustworks",3,24
-"Frost Knight","Vigor Flask","Crystal",1,11
-"Battlesmith","Accelerator","Polaris",1,1
-"Frost Knight","Risk-it-Biscuit","Golden",1,9
-"Skirmisher","Echo Bolt","Sunken",2,34
-"Evincer","Vigor Flask","Sunken",2,4
-"Hexblade","Vigor Flask","Dustworks",4,11
-"Chronomancer","Risk-it-Biscuit","Skullway",1,10
-"Battlesmith","Flame Trap","Graphite",4,40
-"Battlesmith","Nox Bomb","Skullway",0,10
-"Evincer","Bandage","Crystal",3,4
-"Ranger","Nox Bomb","Crystal",2,35
-"Champion","Smoke Screen","Skullway",4,5
-"Titan","Accelerator","Polaris",5,40
-"Stargazer","Echo Bolt","Fissure",5,7
-"Dancer","Echo Bolt","Dustworks",4,29
-"Cloudbreaker","Lava Cake","Graphite",4,6
-"Battlesmith","Risk-it-Biscuit","Graphite",4,19
-"Cloudbreaker","Bandage","Dustworks",0,20
-"Vampire","Echo Bolt","Skullway",1,28
-"Chronomancer","Hedge Seed","Bogpit",0,11
-"Frost Knight","Lava Cake","Golden",5,7
-"Hexblade","Hedge Seed","Golden",2,3
-"Evincer","Flame Trap","Scald",0,33
-"Dancer","Flame Trap","Bogpit",1,19
-"Frost Knight","Vigor Flask","Deepgrove",4,35
-"Alchemist","Bandage","Crystal",5,11
-"Griefer","Echo Bolt","Sunken",3,16
-"Skirmisher","Bandage","Deepgrove",3,31
-"Frost Knight","Lava Cake","Fissure",4,6
-"Hexblade","Bandage","Dustworks",4,17
-"Griefer","Nox Bomb","Crystal",4,18
-"Frost Knight","Risk-it-Biscuit","Bogpit",2,5
-"Evincer","Bandage","Deepgrove",4,9
-"Griefer","Lava Cake","Polaris",4,18
-"Griefer","Hedge Seed","Sunken",2,6
-"Artillery","Accelerator","Crystal",4,12
-"Artillery","Spring Plume","Crystal",2,30
-"Titan","Flame Trap","Crystal",5,15
-"Evincer","Hedge Seed","Deepgrove",4,29
-"Dancer","Lava Cake","Scald",4,21
-"Champion","Hedge Seed","Graphite",2,2
-"Frost Knight","Smoke Screen","Polaris",0,4
-"Battlesmith","Smoke Screen","Graphite",3,2
-"Spectre","Vigor Flask","Polaris",0,27
-"Hexblade","Accelerator","Bogpit",0,4
-"Cloudbreaker","Smoke Screen","Deepgrove",3,22
-"Evincer","Echo Bolt","Crystal",3,3
-"Alchemist","Risk-it-Biscuit","Deepgrove",5,31
-"Ranger","Nox Bomb","Crystal",2,19
-"Ranger","Smoke Screen","Fissure",1,23
-"Spectre","Nox Bomb","Graphite",4,26
-"Champion","Spring Plume","Dustworks",4,28
-"Artillery","Nox Bomb","Dustworks",0,30
-"Battlesmith","Bandage","Deepgrove",5,18
-"Battlesmith","Vigor Flask","Sunken",2,26
-"Champion","Smoke Screen","Sunken",5,21
-"Dancer","Accelerator","Dustworks",3,33
-"Dancer","Accelerator","Crystal",0,17
-"Hexblade","Hedge Seed","Dustworks",5,26
-"Vampire","Accelerator","Sunken",0,26
-"Titan","Echo Bolt","Graphite",3,2
-"Artillery","Nox Bomb","Dustworks",0,6
-"Stargazer","Vigor Flask","Scald",3,8
-"Artillery","Lava Cake","Scald",2,35
-"Stargazer","Spring Plume","Deepgrove",3,24
-"Dancer","Lava Cake","Polaris",1,31
-"Titan","Smoke Screen","Fissure",0,1
-"Champion","Vigor Flask","Crystal",1,23
-"Vampire","Accelerator","Polaris",2,8
-"Skirmisher","Spring Plume","Sunken",0,20
-"Chronomancer","Echo Bolt","Bogpit",2,18
-"Dancer","Spring Plume","Golden",0,40
-"Artillery","Flame Trap","Graphite",0,5
-"Dancer","Hedge Seed","Deepgrove",1,31
-"Artillery","Smoke Screen","Skullway",3,32
-"Hexblade","Spring Plume","Graphite",4,37
-"Evincer","Flame Trap","Polaris",5,23
-"Titan","Hedge Seed","Scald",2,35
-"Artillery","Bandage","Polaris",4,36
-"Skirmisher","Smoke Screen","Graphite",5,10
-"Evincer","Lava Cake","Golden",5,4
-"Battlesmith","Nox Bomb","Graphite",1,13
-"Skirmisher","Flame Trap","Polaris",2,36
-"Dancer","Accelerator","Skullway",0,19
-"Champion","Echo Bolt","Scald",0,30
-"Frost Knight","Lava Cake","Skullway",4,33
-"Vampire","Hedge Seed","Crystal",5,30
-"Champion","Nox Bomb","Sunken",3,27
-"Frost Knight","Echo Bolt","Fissure",4,18
-"Ranger","Spring Plume","Bogpit",3,15
-"Stargazer","Echo Bolt","Polaris",3,40
-"Griefer","Spring Plume","Polaris",2,12
-"Skirmisher","Risk-it-Biscuit","Polaris",2,40
-"Alchemist","Vigor Flask","Scald",5,21
-"Titan","Bandage","Bogpit",2,29
-"Chronomancer","Spring Plume","Crystal",3,13
-"Titan","Smoke Screen","Fissure",5,36
-"Frost Knight","Smoke Screen","Sunken",2,15
-"Skirmisher","Accelerator","Dustworks",5,3
-"Titan","Bandage","Graphite",4,12
-"Vampire","Echo Bolt","Polaris",2,6
-"Evincer","Echo Bolt","Dustworks",3,36
-"Griefer","Smoke Screen","Bogpit",0,4
-"Evincer","Bandage","Dustworks",5,27
-"Frost Knight","Bandage","Skullway",0,9
-"Chronomancer","Hedge Seed","Bogpit",2,22
-"Dancer","Bandage","Deepgrove",3,24
-"Chronomancer","Echo Bolt","Deepgrove",5,22
-"Cloudbreaker","Smoke Screen","Skullway",5,28
-"Stargazer","Risk-it-Biscuit","Fissure",1,31
-"Dancer","Flame Trap","Fissure",2,3
-"Stargazer","Bandage","Fissure",2,26
-"Evincer","Vigor Flask","Crystal",3,19
-"Vampire","Lava Cake","Skullway",3,15
-"Cloudbreaker","Echo Bolt","Graphite",3,12
-"Griefer","Smoke Screen","Crystal",3,24
-"Griefer","Accelerator","Golden",4,24
-"Titan","Bandage","Crystal",5,37
-"Chronomancer","Hedge Seed","Golden",1,32
-"Cloudbreaker","Lava Cake","Dustworks",3,35
-"Frost Knight","Hedge Seed","Sunken",4,1
-"Spectre","Flame Trap","Crystal",1,39
-"Hexblade","Smoke Screen","Polaris",1,18
-"Cloudbreaker","Smoke Screen","Bogpit",2,38
-"Frost Knight","Nox Bomb","Scald",3,20
-"Titan","Spring Plume","Dustworks",0,15
-"Battlesmith","Smoke Screen","Deepgrove",1,22
-"Skirmisher","Flame Trap","Crystal",1,15
-"Alchemist","Hedge Seed","Skullway",2,31
-"Ranger","Bandage","Fissure",1,28
-"Dancer","Nox Bomb","Scald",1,17
-"Griefer","Spring Plume","Bogpit",3,35
-"Champion","Accelerator","Polaris",1,40
-"Hexblade","Vigor Flask","Polaris",1,4
-"Dancer","Nox Bomb","Crystal",1,12
-"Alchemist","Accelerator","Skullway",3,32
-"Battlesmith","Vigor Flask","Polaris",3,32
-"Titan","Vigor Flask","Skullway",4,4
-"Alchemist","Bandage","Polaris",1,14
-"Titan","Nox Bomb","Sunken",1,26
-"Chronomancer","Bandage","Polaris",1,20
-"Vampire","Nox Bomb","Crystal",4,38
-"Evincer","Hedge Seed","Dustworks",5,8
-"Vampire","Flame Trap","Deepgrove",2,14
-"Stargazer","Echo Bolt","Skullway",0,39
-"Frost Knight","Echo Bolt","Scald",4,24
-"Cloudbreaker","Bandage","Sunken",0,23
-"Dancer","Accelerator","Graphite",3,1
-"Cloudbreaker","Vigor Flask","Polaris",4,39
-"Hexblade","Accelerator","Deepgrove",2,8
-"Frost Knight","Flame Trap","Bogpit",0,21
-"Champion","Nox Bomb","Dustworks",1,24
-"Griefer","Nox Bomb","Graphite",3,4
-"Champion","Nox Bomb","Scald",0,17
-"Dancer","Lava Cake","Sunken",4,28
-"Skirmisher","Smoke Screen","Deepgrove",4,7
-"Artillery","Bandage","Fissure",0,33
-"Dancer","Lava Cake","Sunken",5,24
-"Alchemist","Vigor Flask","Polaris",4,24
-"Stargazer","Lava Cake","Scald",5,21
-"Stargazer","Spring Plume","Scald",1,12
-"Ranger","Hedge Seed","Bogpit",0,25
-"Dancer","Vigor Flask","Deepgrove",0,5
-"Ranger","Hedge Seed","Sunken",5,6
-"Chronomancer","Flame Trap","Golden",1,35
-"Spectre","Flame Trap","Crystal",0,33
-"Ranger","Spring Plume","Deepgrove",1,15
-"Evincer","Smoke Screen","Golden",4,1
-"Chronomancer","Flame Trap","Crystal",2,33
-"Titan","Spring Plume","Sunken",4,10
-"Artillery","Lava Cake","Crystal",4,28
-"Frost Knight","Vigor Flask","Deepgrove",0,10
-"Cloudbreaker","Smoke Screen","Golden",1,7
-"Griefer","Bandage","Dustworks",0,22
-"Titan","Nox Bomb","Polaris",1,10
-"Skirmisher","Lava Cake","Scald",1,9
-"Spectre","Lava Cake","Skullway",1,16
-"Alchemist","Smoke Screen","Dustworks",1,30
-"Alchemist","Spring Plume","Deepgrove",5,38
-"Battlesmith","Accelerator","Graphite",4,32
-"Griefer","Smoke Screen","Sunken",3,23
-"Titan","Spring Plume","Fissure",5,6
-"Evincer","Nox Bomb","Golden",2,20
-"Titan","Bandage","Crystal",4,25
-"Stargazer","Spring Plume","Skullway",4,40
-"Artillery","Flame Trap","Fissure",3,33
-"Stargazer","Accelerator","Sunken",3,13
-"Frost Knight","Risk-it-Biscuit","Skullway",3,27
-"Hexblade","Smoke Screen","Deepgrove",4,17
-"Stargazer","Echo Bolt","Crystal",2,25
-"Champion","Lava Cake","Graphite",0,29
-"Stargazer","Lava Cake","Bogpit",5,11
-"Hexblade","Accelerator","Crystal",0,37
-"Skirmisher","Accelerator","Scald",0,21
-"Champion","Risk-it-Biscuit","Graphite",2,32
-"Spectre","Lava Cake","Scald",1,9
-"Ranger","Nox Bomb","Fissure",0,7
-"Battlesmith","Flame Trap","Dustworks",5,30
-"Stargazer","Accelerator","Deepgrove",5,23
-"Cloudbreaker","Spring Plume","Deepgrove",0,2
-"Dancer","Vigor Flask","Fissure",5,24
-"Chronomancer","Risk-it-Biscuit","Bogpit",1,39
-"Vampire","Accelerator","Sunken",2,34
-"Frost Knight","Spring Plume","Deepgrove",3,10
-"Alchemist","Lava Cake","Fissure",5,16
-"Champion","Lava Cake","Dustworks",0,40
-"Ranger","Spring Plume","Sunken",0,36
-"Evincer","Bandage","Graphite",3,27
-"Dancer","Smoke Screen","Bogpit",5,29
-"Chronomancer","Hedge Seed","Bogpit",2,36
-"Chronomancer","Vigor Flask","Crystal",5,16
-"Battlesmith","Lava Cake","Graphite",2,33
-"Chronomancer","Smoke Screen","Golden",5,15
-"Champion","Risk-it-Biscuit","Polaris",2,26
-"Frost Knight","Echo Bolt","Dustworks",2,4
-"Battlesmith","Smoke Screen","Crystal",1,40
-"Ranger","Vigor Flask","Graphite",0,33
-"Stargazer","Risk-it-Biscuit","Sunken",1,39
-"Spectre","Spring Plume","Dustworks",0,6
-"Chronomancer","Spring Plume","Sunken",5,32
-"Spectre","Lava Cake","Polaris",2,32
-"Skirmisher","Accelerator","Sunken",3,8
-"Artillery","Risk-it-Biscuit","Crystal",0,39
-"Stargazer","Smoke Screen","Skullway",4,33
-"Champion","Bandage","Scald",3,19
-"Skirmisher","Risk-it-Biscuit","Sunken",5,28
-"Cloudbreaker","Bandage","Golden",4,37
-"Spectre","Risk-it-Biscuit","Deepgrove",0,28
-"Griefer","Bandage","Polaris",4,4
-"Alchemist","Flame Trap","Golden",4,22
-"Skirmisher","Nox Bomb","Dustworks",4,32
-"Champion","Flame Trap","Graphite",4,28
-"Titan","Vigor Flask","Golden",1,7
-"Skirmisher","Flame Trap","Sunken",2,2
-"Battlesmith","Smoke Screen","Polaris",3,8
-"Stargazer","Flame Trap","Deepgrove",1,20
-"Artillery","Accelerator","Graphite",5,15
-"Cloudbreaker","Spring Plume","Scald",0,24
-"Frost Knight","Nox Bomb","Graphite",5,13
-"Champion","Bandage","Sunken",1,29
-"Chronomancer","Smoke Screen","Crystal",5,36
-"Griefer","Spring Plume","Polaris",1,22
-"Spectre","Flame Trap","Scald",5,4
-"Alchemist","Spring Plume","Scald",4,7
-"Frost Knight","Smoke Screen","Bogpit",4,28
-"Evincer","Echo Bolt","Graphite",4,29
-"Frost Knight","Lava Cake","Crystal",0,36
-"Vampire","Bandage","Skullway",3,25
-"Spectre","Hedge Seed","Fissure",2,37
-"Titan","Accelerator","Graphite",1,25
-"Hexblade","Hedge Seed","Bogpit",5,21
-"Alchemist","Echo Bolt","Graphite",3,25
-"Stargazer","Nox Bomb","Dustworks",4,13
-"Frost Knight","Vigor Flask","Crystal",4,6
-"Cloudbreaker","Lava Cake","Fissure",0,8
-"Hexblade","Smoke Screen","Crystal",3,18
-"Champion","Lava Cake","Bogpit",4,8
-"Champion","Nox Bomb","Fissure",0,11
-"Cloudbreaker","Nox Bomb","Golden",0,19
-"Vampire","Accelerator","Sunken",1,27
-"Spectre","Vigor Flask","Graphite",3,31
-"Chronomancer","Nox Bomb","Sunken",1,2
-"Ranger","Hedge Seed","Bogpit",5,6
-"Hexblade","Flame Trap","Golden",0,26
-"Titan","Risk-it-Biscuit","Golden",3,1
-"Spectre","Echo Bolt","Graphite",1,23
-"Spectre","Bandage","Bogpit",5,12
-"Stargazer","Flame Trap","Golden",2,24
-"Artillery","Risk-it-Biscuit","Scald",0,1
-"Vampire","Nox Bomb","Bogpit",4,30
-"Stargazer","Accelerator","Fissure",3,23
-"Battlesmith","Echo Bolt","Skullway",5,20
-"Evincer","Bandage","Bogpit",0,3
-"Evincer","Lava Cake","Dustworks",5,13
-"Griefer","Spring Plume","Sunken",1,14
-"Vampire","Flame Trap","Graphite",4,17
-"Battlesmith","Echo Bolt","Skullway",1,13
-"Evincer","Accelerator","Bogpit",2,30
-"Cloudbreaker","Vigor Flask","Deepgrove",2,8
-"Griefer","Accelerator","Bogpit",2,2
-"Battlesmith","Accelerator","Fissure",2,37
-"Griefer","Nox Bomb","Skullway",3,31
-"Hexblade","Spring Plume","Polaris",2,18
-"Evincer","Flame Trap","Skullway",2,12
-"Chronomancer","Spring Plume","Graphite",2,18
-"Dancer","Smoke Screen","Polaris",1,28
-"Battlesmith","Bandage","Golden",3,25
-"Griefer","Hedge Seed","Crystal",0,27
-"Battlesmith","Spring Plume","Polaris",5,20
-"Spectre","Flame Trap","Bogpit",4,39
-"Ranger","Flame Trap","Skullway",5,30
-"Artillery","Flame Trap","Polaris",4,19
-"Frost Knight","Flame Trap","Crystal",3,13
-"Evincer","Flame Trap","Scald",4,31
-"Griefer","Risk-it-Biscuit","Graphite",5,14
-"Artillery","Vigor Flask","Dustworks",0,20
-"Chronomancer","Nox Bomb","Golden",2,2
-"Vampire","Nox Bomb","Polaris",3,21
-"Chronomancer","Bandage","Graphite",5,26
-"Skirmisher","Spring Plume","Crystal",3,17
-"Chronomancer","Accelerator","Deepgrove",1,21
-"Ranger","Nox Bomb","Deepgrove",1,32
-"Champion","Bandage","Bogpit",1,5
-"Ranger","Risk-it-Biscuit","Deepgrove",3,18
-"Artillery","Risk-it-Biscuit","Fissure",1,19
-"Ranger","Flame Trap","Polaris",0,40
-"Hexblade","Spring Plume","Golden",1,38
-"Spectre","Risk-it-Biscuit","Sunken",2,27
-"Spectre","Nox Bomb","Bogpit",2,32
-"Vampire","Accelerator","Golden",2,33
-"Battlesmith","Bandage","Fissure",2,23
-"Cloudbreaker","Lava Cake","Bogpit",5,29
-"Stargazer","Risk-it-Biscuit","Scald",0,17
-"Chronomancer","Vigor Flask","Graphite",1,4
-"Titan","Spring Plume","Scald",2,19
-"Alchemist","Spring Plume","Polaris",2,39
-"Alchemist","Accelerator","Crystal",4,39
-"Cloudbreaker","Vigor Flask","Fissure",5,40
-"Artillery","Hedge Seed","Bogpit",4,14
-"Ranger","Accelerator","Skullway",2,10
-"Stargazer","Hedge Seed","Crystal",5,21
-"Evincer","Smoke Screen","Fissure",3,17
-"Stargazer","Accelerator","Deepgrove",1,12
-"Chronomancer","Smoke Screen","Dustworks",5,28
-"Vampire","Echo Bolt","Bogpit",4,37
-"Evincer","Lava Cake","Scald",2,5
-"Alchemist","Echo Bolt","Graphite",1,2
-"Vampire","Vigor Flask","Fissure",1,12
-"Stargazer","Vigor Flask","Bogpit",3,25
-"Titan","Spring Plume","Graphite",0,35
-"Stargazer","Echo Bolt","Graphite",0,29
-"Ranger","Bandage","Skullway",3,24
-"Battlesmith","Echo Bolt","Bogpit",5,34
-"Hexblade","Lava Cake","Sunken",3,40
-"Titan","Risk-it-Biscuit","Bogpit",0,6
-"Ranger","Spring Plume","Dustworks",0,27
-"Battlesmith","Nox Bomb","Bogpit",5,5
-"Stargazer","Accelerator","Scald",2,35
-"Battlesmith","Lava Cake","Crystal",0,28
-"Skirmisher","Echo Bolt","Crystal",1,27
-"Dancer","Smoke Screen","Scald",0,21
-"Alchemist","Smoke Screen","Dustworks",5,29
-"Spectre","Accelerator","Crystal",2,29
-"Alchemist","Nox Bomb","Bogpit",0,2
-"Vampire","Risk-it-Biscuit","Deepgrove",5,35
-"Evincer","Accelerator","Deepgrove",5,28
-"Dancer","Risk-it-Biscuit","Crystal",2,34
-"Frost Knight","Hedge Seed","Golden",2,6
-"Vampire","Nox Bomb","Bogpit",2,11
-"Ranger","Lava Cake","Crystal",4,14
-"Skirmisher","Bandage","Fissure",2,6
-"Alchemist","Bandage","Golden",4,2
-"Champion","Hedge Seed","Graphite",5,16
-"Evincer","Flame Trap","Polaris",2,38
-"Dancer","Smoke Screen","Fissure",4,34
-"Cloudbreaker","Smoke Screen","Graphite",4,12
-"Griefer","Smoke Screen","Graphite",0,36
+"Class","Trinket","Map","Game_ID","Kills","Coins"
+"Spectre","Hedge Seed","Fissure",1,2,15
+"Battlesmith","Accelerator","Dustworks",31,4,28
+"Stargazer","Spring Plume","Dustworks",17,1,2
+"Artillery","Echo Bolt","Skullway",31,2,16
+"Chronomancer","Risk-it-Biscuit","Scald",15,5,35
+"Champion","Risk-it-Biscuit","Bogpit",2,2,1
+"Vampire","Flame Trap","Graphite",28,1,36
+"Skirmisher","Smoke Screen","Graphite",47,4,37
+"Hexblade","Nox Bomb","Bogpit",1,1,24
+"Titan","Risk-it-Biscuit","Polaris",14,2,33
+"Griefer","Accelerator","Dustworks",6,2,26
+"Artillery","Hedge Seed","Bogpit",11,5,1
+"Titan","Flame Trap","Sunken",49,0,10
+"Skirmisher","Hedge Seed","Scald",15,0,30
+"Alchemist","Smoke Screen","Golden",24,3,7
+"Frost Knight","Nox Bomb","Deepgrove",45,1,26
+"Ranger","Bandage","Skullway",24,3,10
+"Vampire","Nox Bomb","Sunken",30,3,5
+"Hexblade","Bandage","Bogpit",7,0,17
+"Vampire","Vigor Flask","Scald",32,5,13
+"Chronomancer","Nox Bomb","Scald",30,3,32
+"Frost Knight","Lava Cake","Crystal",49,3,5
+"Hexblade","Risk-it-Biscuit","Skullway",5,0,22
+"Dancer","Bandage","Sunken",35,0,15
+"Vampire","Risk-it-Biscuit","Deepgrove",42,1,35
+"Alchemist","Lava Cake","Skullway",30,2,13
+"Chronomancer","Hedge Seed","Deepgrove",12,3,26
+"Champion","Smoke Screen","Scald",20,0,29
+"Stargazer","Vigor Flask","Bogpit",49,0,8
+"Titan","Echo Bolt","Polaris",5,4,14
+"Chronomancer","Vigor Flask","Skullway",37,4,11
+"Titan","Smoke Screen","Dustworks",8,2,9
+"Evincer","Lava Cake","Crystal",15,2,3
+"Artillery","Spring Plume","Bogpit",29,0,35
+"Dancer","Risk-it-Biscuit","Sunken",42,0,22
+"Skirmisher","Accelerator","Polaris",25,5,19
+"Chronomancer","Smoke Screen","Bogpit",45,5,19
+"Stargazer","Risk-it-Biscuit","Crystal",39,2,27
+"Cloudbreaker","Echo Bolt","Scald",44,5,32
+"Alchemist","Lava Cake","Deepgrove",19,4,31
+"Skirmisher","Spring Plume","Polaris",42,4,38
+"Cloudbreaker","Flame Trap","Golden",10,0,27
+"Ranger","Hedge Seed","Skullway",3,1,19
+"Spectre","Risk-it-Biscuit","Deepgrove",20,4,15
+"Chronomancer","Spring Plume","Polaris",48,2,7
+"Frost Knight","Smoke Screen","Bogpit",33,3,31
+"Artillery","Echo Bolt","Scald",34,1,25
+"Evincer","Flame Trap","Scald",35,4,21
+"Dancer","Hedge Seed","Dustworks",49,2,18
+"Spectre","Lava Cake","Skullway",14,0,24
+"Chronomancer","Spring Plume","Deepgrove",47,5,9
+"Battlesmith","Hedge Seed","Fissure",50,5,11
+"Evincer","Flame Trap","Sunken",15,1,32
+"Evincer","Bandage","Sunken",28,4,39
+"Spectre","Hedge Seed","Skullway",28,3,40
+"Chronomancer","Risk-it-Biscuit","Dustworks",32,1,36
+"Ranger","Lava Cake","Bogpit",14,1,27
+"Griefer","Bandage","Polaris",19,5,13
+"Stargazer","Vigor Flask","Graphite",2,3,17
+"Cloudbreaker","Hedge Seed","Deepgrove",3,3,9
+"Ranger","Bandage","Deepgrove",6,3,3
+"Vampire","Risk-it-Biscuit","Dustworks",22,1,24
+"Alchemist","Smoke Screen","Deepgrove",10,5,18
+"Champion","Bandage","Graphite",41,0,23
+"Alchemist","Hedge Seed","Deepgrove",1,4,23
+"Dancer","Smoke Screen","Fissure",9,5,20
+"Ranger","Flame Trap","Deepgrove",18,2,34
+"Cloudbreaker","Smoke Screen","Polaris",19,3,18
+"Battlesmith","Echo Bolt","Polaris",1,3,38
+"Stargazer","Lava Cake","Bogpit",16,0,15
+"Hexblade","Smoke Screen","Sunken",30,3,15
+"Stargazer","Hedge Seed","Crystal",32,0,17
+"Battlesmith","Lava Cake","Dustworks",16,1,7
+"Skirmisher","Nox Bomb","Fissure",42,1,25
+"Ranger","Spring Plume","Skullway",3,4,35
+"Battlesmith","Bandage","Bogpit",36,4,27
+"Frost Knight","Echo Bolt","Fissure",6,1,24
+"Titan","Nox Bomb","Dustworks",27,0,2
+"Griefer","Lava Cake","Skullway",12,3,17
+"Chronomancer","Smoke Screen","Skullway",41,3,31
+"Chronomancer","Vigor Flask","Crystal",1,5,7
+"Vampire","Risk-it-Biscuit","Bogpit",19,3,24
+"Skirmisher","Lava Cake","Polaris",27,2,33
+"Dancer","Risk-it-Biscuit","Dustworks",32,4,34
+"Chronomancer","Nox Bomb","Scald",4,5,29
+"Vampire","Hedge Seed","Graphite",15,0,34
+"Alchemist","Bandage","Bogpit",10,2,11
+"Alchemist","Echo Bolt","Skullway",4,1,32
+"Battlesmith","Risk-it-Biscuit","Scald",21,1,25
+"Cloudbreaker","Accelerator","Graphite",10,3,17
+"Frost Knight","Hedge Seed","Sunken",43,2,8
+"Dancer","Accelerator","Dustworks",32,3,4
+"Dancer","Spring Plume","Deepgrove",37,5,17
+"Titan","Nox Bomb","Bogpit",33,3,3
+"Titan","Hedge Seed","Golden",48,5,30
+"Alchemist","Nox Bomb","Skullway",15,5,21
+"Alchemist","Flame Trap","Crystal",35,3,23
+"Titan","Spring Plume","Golden",3,0,8
+"Artillery","Flame Trap","Deepgrove",16,5,18
+"Spectre","Risk-it-Biscuit","Crystal",23,3,5
+"Ranger","Nox Bomb","Fissure",24,3,6
+"Vampire","Hedge Seed","Polaris",40,3,2
+"Stargazer","Vigor Flask","Fissure",3,3,13
+"Griefer","Spring Plume","Bogpit",16,2,19
+"Evincer","Risk-it-Biscuit","Deepgrove",46,1,6
+"Battlesmith","Nox Bomb","Graphite",6,5,29
+"Alchemist","Bandage","Bogpit",41,2,34
+"Chronomancer","Nox Bomb","Golden",49,2,26
+"Griefer","Flame Trap","Graphite",16,1,18
+"Vampire","Flame Trap","Bogpit",8,1,5
+"Battlesmith","Bandage","Dustworks",22,2,34
+"Skirmisher","Spring Plume","Dustworks",21,2,25
+"Evincer","Risk-it-Biscuit","Crystal",38,2,3
+"Spectre","Smoke Screen","Skullway",50,2,10
+"Cloudbreaker","Vigor Flask","Graphite",1,5,36
+"Chronomancer","Accelerator","Deepgrove",4,1,12
+"Battlesmith","Spring Plume","Polaris",49,2,29
+"Ranger","Echo Bolt","Polaris",13,1,15
+"Cloudbreaker","Smoke Screen","Dustworks",37,0,22
+"Hexblade","Flame Trap","Golden",22,0,30
+"Champion","Spring Plume","Crystal",39,0,38
+"Dancer","Bandage","Fissure",49,4,1
+"Frost Knight","Echo Bolt","Graphite",22,3,22
+"Frost Knight","Smoke Screen","Skullway",50,4,36
+"Champion","Flame Trap","Polaris",44,2,4
+"Dancer","Bandage","Bogpit",36,3,29
+"Battlesmith","Flame Trap","Golden",41,2,35
+"Artillery","Accelerator","Scald",1,4,2
+"Ranger","Spring Plume","Graphite",30,1,4
+"Battlesmith","Lava Cake","Skullway",29,2,8
+"Skirmisher","Nox Bomb","Fissure",27,5,9
+"Skirmisher","Smoke Screen","Fissure",31,0,40
+"Dancer","Spring Plume","Scald",24,3,30
+"Artillery","Nox Bomb","Fissure",49,1,23
+"Alchemist","Smoke Screen","Golden",23,5,6
+"Frost Knight","Echo Bolt","Scald",10,0,2
+"Dancer","Echo Bolt","Dustworks",4,4,20
+"Champion","Risk-it-Biscuit","Deepgrove",38,2,17
+"Evincer","Risk-it-Biscuit","Fissure",9,3,21
+"Artillery","Hedge Seed","Scald",28,5,8
+"Ranger","Bandage","Deepgrove",25,4,29
+"Chronomancer","Smoke Screen","Sunken",18,3,16
+"Stargazer","Smoke Screen","Deepgrove",26,0,15
+"Dancer","Risk-it-Biscuit","Sunken",33,0,31
+"Vampire","Bandage","Scald",48,0,28
+"Titan","Accelerator","Deepgrove",1,5,9
+"Hexblade","Spring Plume","Polaris",13,5,8
+"Hexblade","Hedge Seed","Graphite",35,1,13
+"Spectre","Hedge Seed","Golden",22,4,16
+"Dancer","Risk-it-Biscuit","Crystal",49,4,16
+"Cloudbreaker","Nox Bomb","Sunken",17,0,40
+"Dancer","Bandage","Scald",29,5,3
+"Vampire","Flame Trap","Scald",7,0,16
+"Champion","Nox Bomb","Scald",16,4,17
+"Spectre","Bandage","Crystal",35,4,37
+"Battlesmith","Hedge Seed","Fissure",43,2,13
+"Skirmisher","Bandage","Bogpit",35,5,35
+"Chronomancer","Hedge Seed","Dustworks",42,3,28
+"Dancer","Spring Plume","Golden",28,1,39
+"Spectre","Accelerator","Scald",10,3,24
+"Alchemist","Lava Cake","Golden",40,3,40
+"Artillery","Smoke Screen","Scald",25,3,8
+"Hexblade","Bandage","Bogpit",13,4,20
+"Cloudbreaker","Flame Trap","Deepgrove",39,0,28
+"Alchemist","Flame Trap","Golden",48,5,27
+"Griefer","Accelerator","Fissure",6,0,32
+"Alchemist","Spring Plume","Skullway",40,5,13
+"Battlesmith","Nox Bomb","Bogpit",42,1,22
+"Champion","Spring Plume","Dustworks",35,5,22
+"Ranger","Bandage","Graphite",33,4,26
+"Alchemist","Risk-it-Biscuit","Deepgrove",20,4,19
+"Hexblade","Flame Trap","Scald",21,1,13
+"Cloudbreaker","Smoke Screen","Deepgrove",39,5,6
+"Artillery","Smoke Screen","Fissure",25,3,28
+"Artillery","Flame Trap","Golden",2,4,36
+"Spectre","Nox Bomb","Crystal",9,4,20
+"Chronomancer","Echo Bolt","Deepgrove",34,4,2
+"Evincer","Spring Plume","Polaris",13,4,16
+"Dancer","Bandage","Bogpit",7,4,23
+"Frost Knight","Bandage","Graphite",38,3,35
+"Dancer","Hedge Seed","Graphite",50,3,23
+"Dancer","Echo Bolt","Fissure",19,0,8
+"Dancer","Lava Cake","Sunken",10,1,31
+"Evincer","Bandage","Deepgrove",24,5,25
+"Cloudbreaker","Nox Bomb","Deepgrove",6,1,40
+"Champion","Spring Plume","Graphite",16,1,19
+"Frost Knight","Accelerator","Fissure",28,2,19
+"Ranger","Spring Plume","Sunken",5,0,29
+"Titan","Smoke Screen","Deepgrove",41,0,8
+"Evincer","Nox Bomb","Sunken",19,0,17
+"Hexblade","Lava Cake","Polaris",14,5,7
+"Hexblade","Smoke Screen","Fissure",20,5,15
+"Battlesmith","Spring Plume","Deepgrove",22,5,38
+"Artillery","Flame Trap","Scald",5,1,39
+"Vampire","Bandage","Bogpit",50,2,20
+"Alchemist","Spring Plume","Skullway",4,3,27
+"Artillery","Smoke Screen","Fissure",32,0,27
+"Stargazer","Smoke Screen","Polaris",33,0,28
+"Dancer","Nox Bomb","Fissure",4,5,36
+"Spectre","Bandage","Golden",4,0,1
+"Champion","Echo Bolt","Crystal",30,2,12
+"Spectre","Bandage","Skullway",32,3,7
+"Vampire","Bandage","Skullway",49,1,40
+"Evincer","Hedge Seed","Deepgrove",10,2,12
+"Ranger","Risk-it-Biscuit","Graphite",29,1,21
+"Frost Knight","Vigor Flask","Fissure",21,4,9
+"Dancer","Hedge Seed","Polaris",2,1,7
+"Ranger","Lava Cake","Dustworks",2,5,38
+"Griefer","Accelerator","Graphite",28,5,38
+"Spectre","Bandage","Fissure",28,5,18
+"Titan","Accelerator","Sunken",48,2,40
+"Battlesmith","Hedge Seed","Graphite",25,0,33
+"Chronomancer","Flame Trap","Golden",8,4,22
+"Titan","Risk-it-Biscuit","Deepgrove",10,2,27
+"Battlesmith","Hedge Seed","Polaris",48,3,18
+"Cloudbreaker","Lava Cake","Polaris",41,5,32
+"Champion","Hedge Seed","Scald",27,5,24
+"Battlesmith","Nox Bomb","Deepgrove",48,1,35
+"Frost Knight","Bandage","Golden",45,5,24
+"Spectre","Hedge Seed","Crystal",44,3,8
+"Cloudbreaker","Nox Bomb","Deepgrove",22,2,26
+"Skirmisher","Hedge Seed","Fissure",5,1,16
+"Skirmisher","Risk-it-Biscuit","Fissure",50,3,16
+"Stargazer","Hedge Seed","Polaris",40,4,6
+"Skirmisher","Spring Plume","Crystal",37,5,22
+"Cloudbreaker","Spring Plume","Fissure",49,5,28
+"Chronomancer","Accelerator","Golden",50,0,6
+"Skirmisher","Accelerator","Dustworks",31,0,8
+"Spectre","Spring Plume","Skullway",39,4,28
+"Stargazer","Lava Cake","Sunken",25,2,17
+"Titan","Bandage","Deepgrove",13,5,39
+"Titan","Spring Plume","Golden",24,1,8
+"Vampire","Hedge Seed","Dustworks",39,5,9
+"Ranger","Smoke Screen","Skullway",33,3,38
+"Skirmisher","Echo Bolt","Graphite",21,5,34
+"Battlesmith","Hedge Seed","Scald",21,5,23
+"Evincer","Bandage","Scald",20,4,13
+"Frost Knight","Vigor Flask","Polaris",34,2,29
+"Titan","Echo Bolt","Skullway",27,2,40
+"Vampire","Spring Plume","Golden",42,4,25
+"Stargazer","Smoke Screen","Golden",5,0,20
+"Champion","Smoke Screen","Golden",2,4,15
+"Dancer","Echo Bolt","Bogpit",35,3,5
+"Frost Knight","Accelerator","Deepgrove",42,2,18
+"Artillery","Echo Bolt","Sunken",20,2,33
+"Chronomancer","Hedge Seed","Fissure",41,2,31
+"Alchemist","Lava Cake","Fissure",9,5,34
+"Griefer","Echo Bolt","Dustworks",4,0,12
+"Alchemist","Hedge Seed","Deepgrove",3,0,16
+"Battlesmith","Echo Bolt","Sunken",47,3,33
+"Spectre","Bandage","Scald",2,0,4
+"Chronomancer","Accelerator","Crystal",39,4,38
+"Stargazer","Vigor Flask","Fissure",44,1,27
+"Alchemist","Smoke Screen","Polaris",43,3,29
+"Stargazer","Vigor Flask","Golden",22,1,31
+"Battlesmith","Flame Trap","Golden",3,3,32
+"Chronomancer","Lava Cake","Deepgrove",2,2,2
+"Battlesmith","Hedge Seed","Golden",6,2,31
+"Alchemist","Spring Plume","Graphite",44,4,9
+"Alchemist","Bandage","Scald",7,0,26
+"Spectre","Nox Bomb","Scald",14,2,25
+"Hexblade","Echo Bolt","Polaris",42,0,12
+"Spectre","Risk-it-Biscuit","Scald",17,4,38
+"Champion","Spring Plume","Dustworks",16,5,36
+"Chronomancer","Lava Cake","Sunken",33,2,24
+"Evincer","Accelerator","Dustworks",1,3,34
+"Frost Knight","Hedge Seed","Polaris",12,3,1
+"Titan","Vigor Flask","Bogpit",29,1,14
+"Battlesmith","Hedge Seed","Fissure",26,4,7
+"Artillery","Bandage","Golden",37,0,24
+"Griefer","Nox Bomb","Bogpit",33,3,7
+"Ranger","Bandage","Bogpit",49,3,18
+"Alchemist","Lava Cake","Golden",30,4,34
+"Titan","Flame Trap","Dustworks",35,0,40
+"Vampire","Flame Trap","Bogpit",28,2,14
+"Dancer","Vigor Flask","Deepgrove",20,4,39
+"Skirmisher","Nox Bomb","Golden",46,2,38
+"Hexblade","Echo Bolt","Crystal",11,4,18
+"Battlesmith","Lava Cake","Fissure",5,4,1
+"Dancer","Lava Cake","Golden",26,1,6
+"Chronomancer","Flame Trap","Bogpit",13,1,38
+"Vampire","Lava Cake","Dustworks",47,3,10
+"Spectre","Risk-it-Biscuit","Golden",8,0,10
+"Frost Knight","Flame Trap","Deepgrove",24,5,36
+"Evincer","Accelerator","Scald",49,3,40
+"Chronomancer","Flame Trap","Skullway",1,5,33
+"Spectre","Lava Cake","Dustworks",38,1,4
+"Frost Knight","Flame Trap","Deepgrove",33,4,20
+"Champion","Lava Cake","Scald",48,5,13
+"Stargazer","Echo Bolt","Skullway",10,2,10
+"Evincer","Lava Cake","Scald",24,0,6
+"Titan","Lava Cake","Skullway",46,2,1
+"Titan","Risk-it-Biscuit","Crystal",16,0,2
+"Titan","Echo Bolt","Bogpit",43,2,16
+"Frost Knight","Spring Plume","Graphite",48,1,40
+"Champion","Spring Plume","Golden",9,3,6
+"Hexblade","Hedge Seed","Bogpit",3,1,24
+"Chronomancer","Spring Plume","Crystal",19,3,24
+"Spectre","Echo Bolt","Dustworks",36,2,40
+"Alchemist","Spring Plume","Golden",33,1,34
+"Titan","Smoke Screen","Crystal",5,5,26
+"Chronomancer","Flame Trap","Crystal",29,5,4
+"Spectre","Vigor Flask","Dustworks",17,5,9
+"Skirmisher","Nox Bomb","Fissure",36,1,6
+"Stargazer","Echo Bolt","Polaris",25,5,30
+"Ranger","Smoke Screen","Polaris",26,2,21
+"Frost Knight","Nox Bomb","Fissure",20,4,40
+"Spectre","Vigor Flask","Polaris",42,3,13
+"Skirmisher","Risk-it-Biscuit","Polaris",2,5,14
+"Vampire","Hedge Seed","Golden",44,2,17
+"Spectre","Echo Bolt","Scald",44,2,37
+"Artillery","Smoke Screen","Golden",17,5,14
+"Battlesmith","Vigor Flask","Polaris",45,4,24
+"Griefer","Echo Bolt","Bogpit",37,5,2
+"Chronomancer","Bandage","Dustworks",15,0,40
+"Cloudbreaker","Spring Plume","Fissure",17,0,31
+"Evincer","Hedge Seed","Fissure",43,0,29
+"Spectre","Nox Bomb","Sunken",33,1,22
+"Chronomancer","Echo Bolt","Skullway",36,1,35
+"Champion","Lava Cake","Deepgrove",3,5,22
+"Chronomancer","Echo Bolt","Dustworks",19,4,25
+"Griefer","Bandage","Deepgrove",28,1,34
+"Spectre","Hedge Seed","Fissure",15,4,39
+"Frost Knight","Vigor Flask","Sunken",48,1,38
+"Cloudbreaker","Risk-it-Biscuit","Golden",45,1,39
+"Spectre","Nox Bomb","Scald",21,2,21
+"Skirmisher","Smoke Screen","Polaris",33,5,16
+"Battlesmith","Risk-it-Biscuit","Polaris",48,2,6
+"Stargazer","Spring Plume","Golden",47,4,30
+"Dancer","Smoke Screen","Dustworks",40,3,13
+"Chronomancer","Flame Trap","Graphite",1,4,29
+"Dancer","Hedge Seed","Dustworks",17,3,21
+"Spectre","Vigor Flask","Graphite",20,3,16
+"Hexblade","Lava Cake","Fissure",38,1,14
+"Frost Knight","Lava Cake","Fissure",33,3,1
+"Battlesmith","Smoke Screen","Skullway",20,2,27
+"Dancer","Bandage","Crystal",1,1,20
+"Champion","Echo Bolt","Bogpit",7,5,7
+"Chronomancer","Accelerator","Skullway",12,1,8
+"Vampire","Bandage","Graphite",34,1,31
+"Chronomancer","Bandage","Polaris",2,1,28
+"Dancer","Lava Cake","Dustworks",9,5,37
+"Griefer","Vigor Flask","Graphite",24,1,29
+"Alchemist","Smoke Screen","Bogpit",23,2,27
+"Champion","Accelerator","Golden",42,1,28
+"Ranger","Echo Bolt","Crystal",35,0,3
+"Griefer","Bandage","Deepgrove",22,5,22
+"Cloudbreaker","Accelerator","Crystal",19,3,31
+"Alchemist","Echo Bolt","Deepgrove",35,3,28
+"Vampire","Accelerator","Polaris",17,4,24
+"Chronomancer","Hedge Seed","Sunken",22,5,8
+"Hexblade","Spring Plume","Graphite",49,0,31
+"Artillery","Spring Plume","Graphite",7,2,15
+"Chronomancer","Flame Trap","Scald",6,1,5
+"Spectre","Vigor Flask","Scald",41,2,11
+"Skirmisher","Lava Cake","Polaris",21,5,40
+"Dancer","Smoke Screen","Scald",6,1,25
+"Dancer","Spring Plume","Deepgrove",28,2,32
+"Cloudbreaker","Flame Trap","Scald",3,1,15
+"Artillery","Nox Bomb","Fissure",11,3,40
+"Spectre","Vigor Flask","Sunken",22,3,4
+"Champion","Spring Plume","Dustworks",6,3,1
+"Skirmisher","Hedge Seed","Fissure",14,4,1
+"Dancer","Accelerator","Fissure",45,4,19
+"Champion","Vigor Flask","Fissure",7,4,4
+"Skirmisher","Nox Bomb","Polaris",13,4,14
+"Griefer","Vigor Flask","Fissure",48,4,39
+"Frost Knight","Smoke Screen","Skullway",23,0,21
+"Griefer","Flame Trap","Graphite",36,2,6
+"Champion","Smoke Screen","Skullway",33,2,18
+"Vampire","Hedge Seed","Scald",47,0,25
+"Evincer","Smoke Screen","Golden",29,1,38
+"Cloudbreaker","Hedge Seed","Golden",45,4,25
+"Alchemist","Lava Cake","Graphite",20,2,2
+"Frost Knight","Lava Cake","Fissure",49,5,3
+"Titan","Vigor Flask","Scald",27,0,9
+"Battlesmith","Flame Trap","Deepgrove",15,3,16
+"Champion","Spring Plume","Golden",45,3,21
+"Ranger","Nox Bomb","Deepgrove",1,5,35
+"Vampire","Spring Plume","Skullway",49,3,39
+"Hexblade","Flame Trap","Deepgrove",7,5,31
+"Vampire","Echo Bolt","Scald",26,4,6
+"Spectre","Risk-it-Biscuit","Bogpit",2,0,23
+"Champion","Lava Cake","Golden",36,2,4
+"Chronomancer","Echo Bolt","Polaris",18,1,19
+"Titan","Nox Bomb","Fissure",39,2,1
+"Frost Knight","Hedge Seed","Fissure",25,4,4
+"Dancer","Flame Trap","Dustworks",16,1,11
+"Ranger","Echo Bolt","Scald",50,1,19
+"Griefer","Nox Bomb","Crystal",10,2,11
+"Evincer","Vigor Flask","Graphite",16,5,21
+"Titan","Nox Bomb","Fissure",24,4,7
+"Champion","Risk-it-Biscuit","Golden",28,0,28
+"Frost Knight","Lava Cake","Deepgrove",13,3,12
+"Stargazer","Bandage","Dustworks",8,0,20
+"Alchemist","Accelerator","Skullway",31,1,4
+"Hexblade","Echo Bolt","Graphite",34,2,5
+"Frost Knight","Bandage","Deepgrove",28,3,3
+"Frost Knight","Risk-it-Biscuit","Golden",42,2,11
+"Hexblade","Smoke Screen","Fissure",25,4,22
+"Hexblade","Echo Bolt","Skullway",15,2,32
+"Spectre","Vigor Flask","Fissure",24,0,7
+"Dancer","Accelerator","Graphite",32,1,25
+"Frost Knight","Lava Cake","Deepgrove",8,5,14
+"Alchemist","Hedge Seed","Golden",29,4,37
+"Stargazer","Risk-it-Biscuit","Fissure",10,1,6
+"Evincer","Nox Bomb","Sunken",25,2,40
+"Hexblade","Smoke Screen","Sunken",15,2,5
+"Skirmisher","Lava Cake","Fissure",27,4,15
+"Skirmisher","Spring Plume","Bogpit",37,1,27
+"Titan","Bandage","Sunken",16,1,40
+"Frost Knight","Spring Plume","Golden",47,3,9
+"Stargazer","Spring Plume","Sunken",10,1,18
+"Battlesmith","Lava Cake","Sunken",46,0,2
+"Chronomancer","Spring Plume","Sunken",5,3,8
+"Cloudbreaker","Bandage","Crystal",14,4,6
+"Vampire","Bandage","Sunken",34,1,5
+"Battlesmith","Lava Cake","Crystal",46,4,25
+"Spectre","Hedge Seed","Skullway",8,5,34
+"Vampire","Flame Trap","Bogpit",19,1,26
+"Vampire","Vigor Flask","Graphite",29,0,16
+"Champion","Flame Trap","Dustworks",46,3,7
+"Cloudbreaker","Flame Trap","Fissure",35,2,1
+"Spectre","Risk-it-Biscuit","Polaris",50,3,7
+"Champion","Lava Cake","Fissure",5,4,4
+"Ranger","Risk-it-Biscuit","Golden",8,1,33
+"Griefer","Accelerator","Deepgrove",36,0,10
+"Skirmisher","Nox Bomb","Scald",46,5,19
+"Titan","Echo Bolt","Skullway",25,0,3
+"Ranger","Flame Trap","Golden",49,0,16
+"Artillery","Spring Plume","Dustworks",41,3,15
+"Champion","Bandage","Scald",25,3,33
+"Alchemist","Risk-it-Biscuit","Fissure",3,4,27
+"Stargazer","Bandage","Crystal",32,0,27
+"Chronomancer","Risk-it-Biscuit","Dustworks",36,1,40
+"Ranger","Lava Cake","Graphite",50,1,40
+"Hexblade","Lava Cake","Dustworks",29,2,30
+"Alchemist","Accelerator","Scald",5,3,8
+"Chronomancer","Vigor Flask","Sunken",18,5,6
+"Titan","Echo Bolt","Fissure",48,2,13
+"Skirmisher","Echo Bolt","Fissure",22,3,37
+"Skirmisher","Flame Trap","Bogpit",44,4,7
+"Battlesmith","Risk-it-Biscuit","Scald",7,4,35
+"Evincer","Smoke Screen","Dustworks",17,4,10
+"Stargazer","Spring Plume","Crystal",7,1,21
+"Dancer","Nox Bomb","Polaris",5,0,35
+"Griefer","Smoke Screen","Skullway",41,4,2
+"Spectre","Bandage","Dustworks",13,0,5
+"Artillery","Smoke Screen","Sunken",30,0,4
+"Battlesmith","Nox Bomb","Scald",23,1,30
+"Dancer","Nox Bomb","Golden",10,4,20
+"Evincer","Risk-it-Biscuit","Graphite",4,4,6
+"Spectre","Nox Bomb","Polaris",39,5,27
+"Spectre","Bandage","Deepgrove",24,3,21
+"Frost Knight","Smoke Screen","Skullway",41,5,30
+"Spectre","Nox Bomb","Scald",8,4,29
+"Champion","Vigor Flask","Dustworks",2,0,6
+"Battlesmith","Echo Bolt","Golden",48,4,33
+"Skirmisher","Flame Trap","Golden",31,1,30
+"Spectre","Hedge Seed","Fissure",5,2,40
+"Evincer","Echo Bolt","Golden",4,2,38
+"Frost Knight","Nox Bomb","Crystal",6,2,40
+"Stargazer","Vigor Flask","Polaris",12,2,18
+"Dancer","Bandage","Bogpit",28,1,8
+"Frost Knight","Lava Cake","Sunken",3,5,29
+"Vampire","Echo Bolt","Scald",47,3,13
+"Evincer","Bandage","Sunken",32,3,34
+"Titan","Flame Trap","Fissure",16,5,32
+"Champion","Risk-it-Biscuit","Sunken",12,4,30
+"Dancer","Spring Plume","Bogpit",1,4,6
+"Chronomancer","Flame Trap","Crystal",32,5,38
+"Alchemist","Hedge Seed","Bogpit",6,5,37
+"Alchemist","Hedge Seed","Skullway",41,4,32
+"Chronomancer","Nox Bomb","Dustworks",16,2,1
+"Vampire","Vigor Flask","Skullway",43,3,22
+"Titan","Spring Plume","Golden",17,4,35
+"Skirmisher","Echo Bolt","Fissure",13,5,22
+"Battlesmith","Echo Bolt","Graphite",15,5,35
+"Vampire","Flame Trap","Skullway",30,5,37
+"Griefer","Lava Cake","Skullway",35,0,14
+"Alchemist","Accelerator","Skullway",36,4,33
+"Spectre","Spring Plume","Skullway",3,1,9
+"Battlesmith","Vigor Flask","Crystal",35,3,13
+"Artillery","Risk-it-Biscuit","Fissure",27,3,30
+"Chronomancer","Lava Cake","Dustworks",7,5,37
+"Dancer","Hedge Seed","Crystal",41,2,23
+"Hexblade","Echo Bolt","Deepgrove",33,5,37
+"Battlesmith","Vigor Flask","Sunken",30,3,8
+"Dancer","Risk-it-Biscuit","Golden",14,1,5
+"Griefer","Echo Bolt","Graphite",22,4,22
+"Ranger","Nox Bomb","Deepgrove",30,5,37
+"Chronomancer","Hedge Seed","Deepgrove",29,2,32
+"Hexblade","Flame Trap","Fissure",47,0,32
+"Hexblade","Bandage","Fissure",6,0,35
+"Evincer","Echo Bolt","Sunken",19,3,23
+"Cloudbreaker","Accelerator","Graphite",12,0,37
+"Spectre","Risk-it-Biscuit","Skullway",13,2,27
+"Artillery","Spring Plume","Skullway",32,4,34
+"Hexblade","Echo Bolt","Deepgrove",48,5,3
+"Vampire","Spring Plume","Dustworks",40,0,2

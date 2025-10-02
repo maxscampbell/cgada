@@ -16,10 +16,11 @@ generate_test_data <- function(fileName = "test_data", n_obs = 10000) {
   Class <- sample(base_class, size = n_obs, replace = TRUE)
   Trinket <- sample(base_trinket, size = n_obs, replace = TRUE)
   Map <- sample(base_map, size = n_obs, replace = TRUE)
+  Game_ID <- sample(c(1:50), size = n_obs, replace = TRUE)
   Kills <- sample(c(0:5), size = n_obs, replace = TRUE)
   Coins <- sample(c(1:40), size = n_obs, replace = TRUE)
   
-  out <- data.frame(Class, Trinket, Map, Kills, Coins)
+  out <- data.frame(Class, Trinket, Map, Game_ID, Kills, Coins)
   write.csv(out, paste0("./data/", fileName, ".csv"), row.names = FALSE)
   
 }

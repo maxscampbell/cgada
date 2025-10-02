@@ -17,7 +17,7 @@ library(ggforce)
 #Write functions to append the data more efficiently.
 read_in_data <- function(fileName, playtestDate = "99/99/9999", playtestVersion = "0.0.*", hasHeaders = FALSE) {
   out <- read.csv(fileName, hasHeaders)
-  colnames(out) <- c("Class", "Trinket", "Map", "Kills", "Coins")
+  colnames(out) <- c("Class", "Trinket", "Map", "Game_ID", "Kills", "Coins")
   out <- out |>
     mutate(Date = playtestDate,
            Version = playtestVersion)
