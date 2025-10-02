@@ -11,16 +11,19 @@ generate_test_data <- function(fileName = "test_data", n_obs = 10000) {
   base_map <- c("Fissure", "Crystal", "Sunken", "Dustworks", "Polaris", 
                 "Scald", "Golden", "Bogpit", "Deepgrove", "Skullway", 
                 "Graphite")
+  random_nums <- runif(n_obs)
   
   
+  ID <- seq(1, n_obs, by = 1)
   Class <- sample(base_class, size = n_obs, replace = TRUE)
   Trinket <- sample(base_trinket, size = n_obs, replace = TRUE)
   Map <- sample(base_map, size = n_obs, replace = TRUE)
   Game_ID <- sample(c(1:50), size = n_obs, replace = TRUE)
   Kills <- sample(c(0:5), size = n_obs, replace = TRUE)
   Coins <- sample(c(1:40), size = n_obs, replace = TRUE)
+  Is_Complete <- ifelse(random_nums <= 0.05, FALSE, TRUE)
   
-  out <- data.frame(Class, Trinket, Map, Game_ID, Kills, Coins)
+  out <- data.frame(ID, Class, Trinket, Map, Game_ID, Kills, Coins, Is_Complete)
   write.csv(out, paste0("./data/", fileName, ".csv"), row.names = FALSE)
   
 }
