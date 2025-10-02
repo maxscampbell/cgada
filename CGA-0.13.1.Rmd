@@ -33,6 +33,14 @@ merge_playtests <- function(dataframes) {
   
   return(out)
 }
+
+generate_seqID <- function(x) {
+  
+  x |>
+    group_by(Game_ID) |>
+    mutate(seqID = 1:n())
+  
+}
 ```
 
 ```{r echo=FALSE}
@@ -45,6 +53,7 @@ test2 <- read_in_data("test_data2.csv", "02/02/2025", "0.13.1", TRUE)
 #Merge obs. into one set of data
 dflist <- list(test1, test2)
 cgada <- merge_playtests(dflist)
+cgada <- generate_seqID(cgada)
 ```
 
 # Class Data
@@ -222,6 +231,10 @@ suppressMessages(
   geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "red")
 )
 ```
+
+## Map Data [WIP]
+
+## Within-Game Data [WIP]
 
 ## Some Fun Tidbits
 
