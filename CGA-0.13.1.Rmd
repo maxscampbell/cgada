@@ -38,7 +38,8 @@ generate_seqID <- function(x) {
   
   x |>
     group_by(Game_ID) |>
-    mutate(seqID = 1:n())
+    mutate(seqID = 1:n()) |>
+    ungroup()
   
 }
 ```
@@ -56,9 +57,7 @@ cgada <- merge_playtests(dflist)
 cgada <- generate_seqID(cgada)
 ```
 
-# Class Data
-
-## General Class Popularity
+## Class Data
 
 ```{r echo=FALSE}
 suppressMessages(
@@ -84,8 +83,6 @@ suppressMessages(
 
 ```
 
-## Kills Per Entry
-
 ```{r echo=FALSE}
 suppressMessages(
   cgada |>
@@ -108,8 +105,6 @@ suppressMessages(
   geom_hline(yintercept = sum(cgada$Kills) / nrow(cgada), color = "red")
 )
 ```
-
-## Coins Per Entry
 
 ```{r echo=FALSE}
 suppressMessages(
@@ -134,8 +129,6 @@ suppressMessages(
 )
 ```
 
-## Relative Efficiency
-
 ```{r echo=FALSE}
 suppressMessages(
   cgada |>
@@ -159,7 +152,7 @@ suppressMessages(
 )
 ```
 
-## Trinket Popularity
+## Trinket Data
 
 ```{r echo=FALSE}
 
@@ -184,8 +177,6 @@ suppressMessages(
   geom_hline(yintercept = nrow(cgada) / nrow(distinct(cgada, Trinket)), color = "red")
 )
 ```
-
-## Trinket Efficacy
 
 ```{r echo=FALSE}
 suppressMessages(
@@ -235,6 +226,43 @@ suppressMessages(
 ## Map Data [WIP]
 
 ## Within-Game Data [WIP]
+
+### Coins Over Time
+
+```{r echo = FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Game_ID) |>
+  ggplot(aes(x = seqID, y = Coins, color = Map)) +
+  geom_point() +
+  geom_line() +
+  stat_summary(aes(group = 1), geom = "line", fun.y = mean, size = 1.5, color = "black") +
+  labs(title = "Coins Over Time (All Maps)",
+       caption = "Bold line is the average across all games.") + xlab("Sequential Entry ID")
+)
+```
+
+The purpose of this plot is two-fold:
+
+1. The design of Cash Grab is such that that every time a player steps on a plate, 2 more coins enter the "economy" so to speak. As such, the mean number of coins earned per life should generally go up as the game progresses as players approach the coin goal. Below is the same plot, but with only the games that occurred on Scald, as players can effectively remove coins from the game if they die by burning in lava.
+
+2. It's fairly certain that the variance in kills should remain constant over time, as the general parameters of combat in cash grab do not change on a per-life basis. However, the coins that each player holds does change significantly, so it is far less certain how the coins per life will vary. By plotting this, we can get a general understanding of how the passage of time within each game effects the way players earn coins. Some characteristics to look for: lines on the plot branching out to higher and lower extremes as the sequential entry ID goes up (fanning or increasing variance over time), lines on the plot converging towards the average (funneling or decreasing variance over time), or a generally constant block that follows the same patterns that the average does (constant variance over time).
+
+```{r echo = FALSE}
+cgada |>
+  filter(Map == "Scald") |>
+  group_by(Game_ID) |>
+  ggplot(aes(x = seqID, y = Coins)) +
+  geom_point(color = "purple1") +
+  geom_line(color = "purple1") +
+  stat_summary(aes(group = 1), geom = "line", fun.y = mean, size = 1.5, color = "black") +
+  labs(title = "Coins Over Time (Scald)",
+       caption = "Bold line is the average across all games.") +
+  scale_color_manual(labels = c("Alchemist", "Artillery", "Battlesmith", "Champion", "Chronomancer", 
+                  "Cloudbreaker", "Dancer", "Evincer", "Frost Knight", "Griefer", 
+                  "Hexblade", "Ranger", "Skirmisher", "Spectre", "Stargazer", 
+                  "Titan", "Vampire"), values = seq(1:17))
+```
 
 ## Some Fun Tidbits
 
