@@ -37,6 +37,7 @@ merge_playtests <- function(dataframes) {
 generate_seqID <- function(x) {
   
   x |>
+    mutate(ID = ID + 1) |>
     group_by(Game_ID) |>
     mutate(seqID = 1:n()) |>
     ungroup()
@@ -54,7 +55,8 @@ test2 <- read_in_data("test_data2.csv", "02/02/2025", "0.13.1", TRUE)
 #Merge obs. into one set of data
 dflist <- list(test1, test2)
 cgada <- merge_playtests(dflist)
-cgada <- generate_seqID(cgada)
+cgada <- generate_seqID(cgada) |>
+  filter(Is_Complete == TRUE)
 ```
 
 ## Class Data
@@ -230,16 +232,23 @@ suppressMessages(
 ### Coins Over Time
 
 ```{r echo = FALSE}
-suppressMessages(
+
+  stddevs <- cgada |>
+    group_by(seqID) |>
+    summarise(mean = mean(Coins),
+      sd = sd(Coins))
+
   cgada |>
   group_by(Game_ID) |>
   ggplot(aes(x = seqID, y = Coins, color = Map)) +
   geom_point() +
   geom_line() +
   stat_summary(aes(group = 1), geom = "line", fun.y = mean, size = 1.5, color = "black") +
+  stat_summary(geom = "ribbon", fun.data = 'mean_sdl', mult = 1, color = "gray", alpha = 0.05) +
   labs(title = "Coins Over Time (All Maps)",
-       caption = "Bold line is the average across all games.") + xlab("Sequential Entry ID")
-)
+       caption = "Bold line is the average across all games.
+       Surrounding ribbon represents bounds for values to remain within one standard deviation of the average.") + xlab("Sequential Entry ID")
+
 ```
 
 The purpose of this plot is two-fold:
@@ -256,8 +265,10 @@ cgada |>
   geom_point(color = "purple1") +
   geom_line(color = "purple1") +
   stat_summary(aes(group = 1), geom = "line", fun.y = mean, size = 1.5, color = "black") +
+  stat_summary(geom = "ribbon", fun.data = 'mean_sdl', mult = 1, color = "gray", alpha = 0.05) +
   labs(title = "Coins Over Time (Scald)",
-       caption = "Bold line is the average across all games.") +
+       caption = "Bold line is the average across all games.
+       Surrounding ribbon represents bounds for values to remain within one standard deviation of the average.") +
   scale_color_manual(labels = c("Alchemist", "Artillery", "Battlesmith", "Champion", "Chronomancer", 
                   "Cloudbreaker", "Dancer", "Evincer", "Frost Knight", "Griefer", 
                   "Hexblade", "Ranger", "Skirmisher", "Spectre", "Stargazer", 
