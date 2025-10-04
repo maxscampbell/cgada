@@ -1,7 +1,14 @@
 ---
 title: "Cash Grab Arena -- Playtest Data Analysis"
 author: "Version 0.13.1"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 3
+    number_sections: false
+    theme: lumen
 ---
 
 ```{r setup, include=FALSE}
@@ -131,29 +138,6 @@ suppressMessages(
 )
 ```
 
-```{r echo=FALSE}
-suppressMessages(
-  cgada |>
-  group_by(Class) |>
-  summarise(Entry = n(),
-         KPE = sum(Kills) / sum(Entry),
-         CPE = sum(Coins) / sum(Entry)) |>
-  mutate(KPE.scaled = (KPE - (0.8 * min(KPE))) / ((1.2 * max(KPE)) - (0.8 * min(KPE))),
-         CPE.scaled = (CPE - (0.8 * min(CPE))) / ((1.2 * max(CPE)) - (0.8 * min(CPE))),
-         Rel.Eff = KPE.scaled - CPE.scaled) |>
-  ggplot(aes(x = Class, y = Rel.Eff)) +
-  geom_bar(stat = "identity", color = "black", fill = "red") +
-  theme(legend.position = "none") +
-  xlab("Class") + ylab("% Difference") +
-  labs(title = "Relative Efficiency",
-       caption = "Positive values indicate more efficient kill generation per life.
-          Negative values indicate more efficient coin earnings per life.
-          Larger magnitudes suggest more extreme specializations.") +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
-  geom_hline(yintercept = 0, color = "black")
-)
-```
-
 ## Trinket Data
 
 ```{r echo=FALSE}
@@ -227,7 +211,82 @@ suppressMessages(
 
 ## Map Data [WIP]
 
-## Within-Game Data [WIP]
+```{r echo = FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Map) |>
+  summarise(Entry = n(),
+         KPE = sum(Kills) / sum(Entry),
+         sd = sd(Kills),
+         se = sd / sqrt(Entry)) |>
+  ggplot(aes(x = Map, y = KPE)) +
+  geom_bar(stat = "identity", color = "black", fill = "lavender") +
+  theme(legend.position = "none") +
+  xlab("Map") + ylab("Kills") +
+  labs(title = "Kills per Entry by Map",
+       caption = "Red line indicates the global average Kills per Entry.
+                  Error bars indicate values which we could likely observe on repeated playtests, accounting for sample size.") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  geom_errorbar(aes(ymin = KPE - se,
+                ymax = KPE + se),
+                width = 0.5) +
+  geom_hline(yintercept = sum(cgada$Kills) / nrow(cgada), color = "red")
+)
+```
+```{r echo = FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Map) |>
+  summarise(Entry = n(),
+         CPE = sum(Coins) / sum(Entry),
+         sd = sd(Coins),
+         se = sd / sqrt(Entry)) |>
+  ggplot(aes(x = Trinket, y = CPE)) +
+  geom_bar(stat = "identity", color = "black", fill = "yellow") +
+  theme(legend.position = "none") +
+  xlab("Map") + ylab("Coins") +
+  labs(title = "Coins per Entry by Map",
+       caption = "Red line indicates the global average Coins per Entry.
+                  Error bars indicate values which we could likely observe on repeated playtests, accounting for sample size.") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  geom_errorbar(aes(ymin = CPE - se,
+                ymax = CPE + se),
+                width = 0.5) +
+  geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "red")
+)
+```
+
+The following two plots are mainly here for outlier detection purposes :)
+
+```{r echo = FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Map, Class) |>
+  summarise(Entry = n(),
+         KPE = sum(Kills) / sum(Entry)) |>
+  ggplot(aes(x = Class, y = KPE, color = Map)) +
+  geom_point() +
+  xlab("Trinket") + ylab("Kills") +
+  labs(title = "Class Kills per Entry by Map") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+)
+```
+
+```{r echo = FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Map, Class) |>
+  summarise(Entry = n(),
+         CPE = sum(Coins) / sum(Entry)) |>
+  ggplot(aes(x = Class, y = CPE, color = Map)) +
+  geom_point() +
+  xlab("Trinket") + ylab("Coins") +
+  labs(title = "Class Coins per Entry by Map") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+)
+```
+
+## Misc. [WIP]
 
 ### Coins Over Time
 
@@ -237,7 +296,6 @@ suppressMessages(
     group_by(seqID) |>
     summarise(mean = mean(Coins),
       sd = sd(Coins))
-
   cgada |>
   group_by(Game_ID) |>
   ggplot(aes(x = seqID, y = Coins, color = Map)) +
@@ -275,37 +333,90 @@ cgada |>
                   "Titan", "Vampire"), values = seq(1:17))
 ```
 
-## Some Fun Tidbits
+### Kills per Entry versus Coins per Entry
 
-### Top Class-and-Trinket Combos by Lives Played
+There are two main metrics of which we measure class performance within Cash Grab: Kills per Entry/Life Played (KPE) and Coins per Entry (CPE). Since coins are the win condition of the game and getting kills consistently is vital to reaching that goal, it is important to make sure that a singular class can balance those two facets of the game effectively. If a class is strong at collecting coins (which usually manifests as map control abilities), it should be vulnerable  against more selfish classes that prioritize advantages in combat. 
+
+In the past, we've displayed this as relative efficiency, which scales the metrics against each other and attempts to show how specialized a class is:
 
 ```{r echo=FALSE}
 suppressMessages(
-print(
-cgada |>
-  group_by(Class, Trinket) |>
-  summarise(LivesPlayed = n()) |>
-  arrange(desc(LivesPlayed)),
-n = 20)
+  cgada |>
+  group_by(Class) |>
+  summarise(Entry = n(),
+         KPE = sum(Kills) / sum(Entry),
+         CPE = sum(Coins) / sum(Entry)) |>
+  mutate(KPE.scaled = (KPE - (0.8 * min(KPE))) / ((1.2 * max(KPE)) - (0.8 * min(KPE))),
+         CPE.scaled = (CPE - (0.8 * min(CPE))) / ((1.2 * max(CPE)) - (0.8 * min(CPE))),
+         Rel.Eff = KPE.scaled - CPE.scaled) |>
+  ggplot(aes(x = Class, y = Rel.Eff)) +
+  geom_bar(stat = "identity", color = "black", fill = "red") +
+  theme(legend.position = "none") +
+  xlab("Class") + ylab("% Difference") +
+  labs(title = "Relative Efficiency",
+       caption = "Positive values indicate more efficient kill generation per life.
+          Negative values indicate more efficient coin earnings per life.
+          Larger magnitudes suggest more extreme specializations.") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  geom_hline(yintercept = 0, color = "black")
 )
 ```
 
-### Most Coins Generated on an Entry
+Here's a scatterplot that attempts to show the relationship between KPE and CPE as well:
 
-```{r echo=FALSE}
-cgada |>
+```{r echo = FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Class) |>
+  summarise(Entry = n(),
+         KPE = sum(Kills) / sum(Entry),
+         CPE = sum(Coins) / sum(Entry)) |>
+  ggplot(aes(x = KPE, y = CPE, color = Class, label = Class)) +
+  geom_point() + geom_text(hjust = 1, vjust = 1, check_overlap = FALSE) +
+  xlab("Kills per Entry") + ylab("Coins per Entry") +
+  labs(title = "Class Specializations: Kills per Entry vs. Coins per Entry") +
+  geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "black") +
+  geom_vline(xintercept = sum(cgada$Kills) / nrow(cgada), color = "black") +
+  theme(legend.position = "none") +
+  annotate(geom = "text", x = 2.16, y = 23.5, label = "Coin-specialized", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 2.8, y = 23.5, label = "Strong", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 2.16, y = 18.5, label = "Weak", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 2.8, y = 18.5, label = "Kill-specialized", color = "black", alpha = 0.4)
+)
+```
+
+## Some Fun Tidbits
+
+### Most Played Class/Trinket Loadouts
+
+```{r echo=FALSE, results = 'asis'}
+suppressMessages(
+out <- cgada |>
+  group_by(Class, Trinket) |>
+  summarise(LivesPlayed = n()) |>
+  ungroup() |>
+  arrange(desc(LivesPlayed))
+)
+
+knitr::kable(out[1:20,])
+```
+
+### Most Coins Generated in a Single Life
+
+```{r echo=FALSE, results = 'asis'}
+knitr::kable(cgada |>
   arrange(desc(Coins)) |>
   select(Class, Trinket, Map, Coins) |>
-  slice_head(n = 10)
+  slice_head(n = 10))
 ```
 
-### Most Kills on an Entry
+### Most Kills in a Single Life
 
-```{r echo=FALSE}
-cgada |>
+```{r echo=FALSE, results = 'asis'}
+knitr::kable(cgada |>
   arrange(desc(Kills)) |>
   select(Class, Trinket, Map, Kills) |>
-  slice_head(n = 10)
+  slice_head(n = 10))
 ```
 
-[Click here to return to the main page.](https://maxscampbell.github.io/cgada/)
+## [Click here to return to the main page.](https://maxscampbell.github.io/cgada/)
