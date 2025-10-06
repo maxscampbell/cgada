@@ -98,7 +98,6 @@ suppressMessages(
                 width = 0.5) +
   geom_hline(yintercept = nrow(cgada) / nrow(distinct(cgada, Class)), color = "red")
 )
-
 ```
 
 ```{r echo=FALSE}
@@ -186,7 +185,7 @@ suppressMessages(
   theme(legend.position = "none") +
   xlab("Trinket") + ylab("Kills") +
   labs(title = "Trinket Kills per Entry",
-       caption = "Red line indicates the average Kills per Entry across all classes.
+       caption = "Red line indicates the average Kills per Entry across all trinkets.
                   Error bars indicate values which we could likely observe on repeated playtests, accounting for sample size.") +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
   geom_errorbar(aes(ymin = KPE - se,
@@ -208,7 +207,7 @@ suppressMessages(
   theme(legend.position = "none") +
   xlab("Trinket") + ylab("Coins") +
   labs(title = "Trinket Coins per Entry",
-       caption = "Red line indicates the average Coins per Entry across all classes.
+       caption = "Red line indicates the average Coins per Entry across all trinkets.
                   Error bars indicate values which we could likely observe on repeated playtests, accounting for sample size.") +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
   geom_errorbar(aes(ymin = CPE - se,
@@ -316,7 +315,7 @@ suppressMessages(
 
 The purpose of this plot is two-fold:
 
-1. The design of Cash Grab is such that that every time a player steps on a plate, 2 more coins enter the "economy" so to speak. As such, the mean number of coins earned per life should generally go up as the game progresses as players approach the coin goal. Below is the same plot, but with only the games that occurred on Scald, as players can effectively remove coins from the game if they die by burning in lava.
+1. The design of Cash Grab is such that that every time a player steps on a plate, 2 more coins enter the "economy" so to speak. As such, it is worth looking to see if the average number of coins earned changes over time in a meaningful way, as it could directly influence our other visualizations.
 
 2. It's fairly certain that the variance in kills should remain constant over time, as the general parameters of combat in cash grab do not change on a per-life basis. However, the coins that each player holds does change significantly, so it is far less certain how the coins per life will vary. By plotting this, we can get a general understanding of how the passage of time within each game effects the way players earn coins. Some characteristics to look for: lines on the plot branching out to higher and lower extremes as the sequential entry ID goes up (fanning or increasing variance over time), lines on the plot converging towards the average (funneling or decreasing variance over time), or a generally constant block that follows the same patterns that the average does (constant variance over time).
 
