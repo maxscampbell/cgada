@@ -34,6 +34,10 @@ read_in_data <- function(fileName, playtestDate = "99/99/9999", playtestVersion 
 merge_playtests <- function(dataframes) {
   out <- dataframes[[1]]
   
+  if (length(dataframes) == 1) {
+    return(out)
+  }
+  
   for (i in 2:length(dataframes)) {
     out <- rbind(out, dataframes[[i]])
   }
@@ -55,16 +59,21 @@ generate_seqID <- function(x) {
 ```{r echo=FALSE}
 # Read in data
 setwd("data")
-test1 <- read_in_data("test_data.csv", "01/01/2025", "0.13.1", TRUE)
-test2 <- read_in_data("test_data2.csv", "02/02/2025", "0.13.1", TRUE)
-
+october5 <- read_in_data("v0_13_1_d10_05_2025.csv", "10/05/2025", "0.13.1", TRUE)
 
 #Merge obs. into one set of data
-dflist <- list(test1, test2)
+dflist <- list(october5)
 cgada <- merge_playtests(dflist)
 cgada <- generate_seqID(cgada) |>
   filter(Is_Complete == TRUE)
 ```
+
+## Introduction and Notes
+
+The following data is recorded under the following parameters:
+
+- Time Limit: 15 minutes
+- Coin Goal: 100 coins
 
 ## Class Data
 
@@ -241,7 +250,7 @@ suppressMessages(
          CPE = sum(Coins) / sum(Entry),
          sd = sd(Coins),
          se = sd / sqrt(Entry)) |>
-  ggplot(aes(x = Trinket, y = CPE)) +
+  ggplot(aes(x = Map, y = CPE)) +
   geom_bar(stat = "identity", color = "black", fill = "yellow") +
   theme(legend.position = "none") +
   xlab("Map") + ylab("Coins") +
@@ -291,11 +300,7 @@ suppressMessages(
 ### Coins Over Time
 
 ```{r echo = FALSE}
-
-  stddevs <- cgada |>
-    group_by(seqID) |>
-    summarise(mean = mean(Coins),
-      sd = sd(Coins))
+suppressMessages(
   cgada |>
   group_by(Game_ID) |>
   ggplot(aes(x = seqID, y = Coins, color = Map)) +
@@ -306,7 +311,7 @@ suppressMessages(
   labs(title = "Coins Over Time (All Maps)",
        caption = "Bold line is the average across all games.
        Surrounding ribbon represents bounds for values to remain within one standard deviation of the average.") + xlab("Sequential Entry ID")
-
+)
 ```
 
 The purpose of this plot is two-fold:
@@ -378,10 +383,10 @@ suppressMessages(
   geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "black") +
   geom_vline(xintercept = sum(cgada$Kills) / nrow(cgada), color = "black") +
   theme(legend.position = "none") +
-  annotate(geom = "text", x = 2.16, y = 23.5, label = "Coin-specialized", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 2.8, y = 23.5, label = "Strong", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 2.16, y = 18.5, label = "Weak", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 2.8, y = 18.5, label = "Kill-specialized", color = "black", alpha = 0.4)
+  annotate(geom = "text", x = 0.55, y = 23.5, label = "Coin-specialized", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 1.5, y = 23.5, label = "High Event", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 0.48, y = 12, label = "Low Event", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 1.5, y = 12, label = "Kill-specialized", color = "black", alpha = 0.4)
 )
 ```
 
