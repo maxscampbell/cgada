@@ -60,9 +60,10 @@ generate_seqID <- function(x) {
 # Read in data
 setwd("data")
 october5 <- read_in_data("v0_13_1_d10_05_2025.csv", "10/05/2025", "0.13.1", TRUE)
+october19 <- read_in_data("v0_13_1_d10_19_2025.csv", "10/19/2025", "0.13.1", TRUE)
 
 #Merge obs. into one set of data
-dflist <- list(october5)
+dflist <- list(october5, october19)
 cgada <- merge_playtests(dflist)
 cgada <- generate_seqID(cgada) |>
   filter(Is_Complete == TRUE)
