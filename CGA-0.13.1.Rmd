@@ -383,10 +383,10 @@ suppressMessages(
   geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "black") +
   geom_vline(xintercept = sum(cgada$Kills) / nrow(cgada), color = "black") +
   theme(legend.position = "none") +
-  annotate(geom = "text", x = 0.55, y = 23.5, label = "Coin-specialized", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 1.5, y = 23.5, label = "High Event", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 0.48, y = 23.5, label = "Coin-specialized", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 1.7, y = 23.5, label = "High Event", color = "black", alpha = 0.4) +
   annotate(geom = "text", x = 0.48, y = 12, label = "Low Event", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 1.5, y = 12, label = "Kill-specialized", color = "black", alpha = 0.4)
+  annotate(geom = "text", x = 1.7, y = 12, label = "Kill-specialized", color = "black", alpha = 0.4)
 )
 ```
 
