@@ -1,6 +1,6 @@
 ---
 title: "Cash Grab Arena -- Playtest Data Analysis"
-author: "Version 0.13.1"
+author: "Version 0.13.1 and Later"
 output: 
   html_document:
     toc: true
@@ -61,9 +61,10 @@ generate_seqID <- function(x) {
 setwd("data")
 october5 <- read_in_data("v0_13_1_d10_05_2025.csv", "10/05/2025", "0.13.1", TRUE)
 october19 <- read_in_data("v0_13_1_d10_19_2025.csv", "10/19/2025", "0.13.1", TRUE)
+november2 <- read_in_data("v0_13_2_d11_02_2025.csv", "11/02/2025", "0.13.2", TRUE)
 
 #Merge obs. into one set of data
-dflist <- list(october5, october19)
+dflist <- list(october5, october19, november2)
 cgada <- merge_playtests(dflist)
 cgada <- generate_seqID(cgada) |>
   filter(Is_Complete == TRUE)
@@ -383,10 +384,10 @@ suppressMessages(
   geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "black") +
   geom_vline(xintercept = sum(cgada$Kills) / nrow(cgada), color = "black") +
   theme(legend.position = "none") +
-  annotate(geom = "text", x = 0.48, y = 23.5, label = "Coin-specialized", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 1.7, y = 23.5, label = "High Event", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 0.48, y = 12, label = "Low Event", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 1.7, y = 12, label = "Kill-specialized", color = "black", alpha = 0.4)
+  annotate(geom = "text", x = 0.45, y = 23, label = "Coin-specialized", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 1.35, y = 23, label = "High Event", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 0.45, y = 11, label = "Low Event", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 1.35, y = 11, label = "Kill-specialized", color = "black", alpha = 0.4)
 )
 ```
 
