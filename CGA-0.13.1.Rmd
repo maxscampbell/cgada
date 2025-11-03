@@ -39,6 +39,7 @@ merge_playtests <- function(dataframes) {
   }
   
   for (i in 2:length(dataframes)) {
+    dataframes[[i]]$Game_ID <- dataframes[[i]]$Game_ID + max(dataframes[[i - 1]]$Game_ID)
     out <- rbind(out, dataframes[[i]])
   }
   
