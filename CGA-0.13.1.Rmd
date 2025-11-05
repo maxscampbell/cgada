@@ -277,7 +277,7 @@ suppressMessages(
          KPE = sum(Kills) / sum(Entry)) |>
   ggplot(aes(x = Class, y = KPE, color = Map)) +
   geom_point() +
-  xlab("Trinket") + ylab("Kills") +
+  xlab("Class") + ylab("Kills") +
   labs(title = "Class Kills per Entry by Map") +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 )
@@ -291,7 +291,7 @@ suppressMessages(
          CPE = sum(Coins) / sum(Entry)) |>
   ggplot(aes(x = Class, y = CPE, color = Map)) +
   geom_point() +
-  xlab("Trinket") + ylab("Coins") +
+  xlab("Class") + ylab("Coins") +
   labs(title = "Class Coins per Entry by Map") +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 )
