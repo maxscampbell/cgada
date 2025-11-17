@@ -40,6 +40,7 @@ merge_playtests <- function(dataframes) {
   
   for (i in 2:length(dataframes)) {
     dataframes[[i]]$Game_ID <- dataframes[[i]]$Game_ID + max(dataframes[[i - 1]]$Game_ID)
+    dataframes[[i]]$ID <- dataframes[[i]]$ID + max(dataframes[[i - 1]]$ID)
     out <- rbind(out, dataframes[[i]])
   }
   
@@ -63,9 +64,10 @@ setwd("data")
 october5 <- read_in_data("v0_13_1_d10_05_2025.csv", "10/05/2025", "0.13.1", TRUE)
 october19 <- read_in_data("v0_13_1_d10_19_2025.csv", "10/19/2025", "0.13.1", TRUE)
 november2 <- read_in_data("v0_13_2_d11_02_2025.csv", "11/02/2025", "0.13.2", TRUE)
+november16 <- read_in_data("v0_13_2_d11_16_2025.csv", "11/16/2025", "0.13.2", TRUE)
 
 #Merge obs. into one set of data
-dflist <- list(october5, october19, november2)
+dflist <- list(october5, october19, november2, november16)
 cgada <- merge_playtests(dflist)
 cgada <- generate_seqID(cgada) |>
   filter(Is_Complete == TRUE)
@@ -385,10 +387,10 @@ suppressMessages(
   geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "black") +
   geom_vline(xintercept = sum(cgada$Kills) / nrow(cgada), color = "black") +
   theme(legend.position = "none") +
-  annotate(geom = "text", x = 0.45, y = 23, label = "Coin-specialized", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 1.35, y = 23, label = "High Event", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 0.45, y = 24.5, label = "Coin-specialized", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 1.17, y = 24.5, label = "High Event", color = "black", alpha = 0.4) +
   annotate(geom = "text", x = 0.45, y = 11, label = "Low Event", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 1.35, y = 11, label = "Kill-specialized", color = "black", alpha = 0.4)
+  annotate(geom = "text", x = 1.17, y = 11, label = "Kill-specialized", color = "black", alpha = 0.4)
 )
 ```
 
