@@ -1,6 +1,6 @@
 ---
 title: "Cash Grab Arena -- Playtest Data Analysis"
-author: "Version 0.13.1 and Later"
+author: "Versions 0.13.1 and 0.13.2"
 output: 
   html_document:
     toc: true
@@ -65,9 +65,10 @@ october5 <- read_in_data("v0_13_1_d10_05_2025.csv", "10/05/2025", "0.13.1", TRUE
 october19 <- read_in_data("v0_13_1_d10_19_2025.csv", "10/19/2025", "0.13.1", TRUE)
 november2 <- read_in_data("v0_13_2_d11_02_2025.csv", "11/02/2025", "0.13.2", TRUE)
 november16 <- read_in_data("v0_13_2_d11_16_2025.csv", "11/16/2025", "0.13.2", TRUE)
+november30 <- read_in_data("v0_13_2_d11_30_2025.csv", "11/30/2025", "0.13.2", TRUE)
 
 #Merge obs. into one set of data
-dflist <- list(october5, october19, november2, november16)
+dflist <- list(october5, october19, november2, november16, november30)
 cgada <- merge_playtests(dflist)
 cgada <- generate_seqID(cgada) |>
   filter(Is_Complete == TRUE)
@@ -79,6 +80,8 @@ The following data is recorded under the following parameters:
 
 - Time Limit: 15 minutes
 - Coin Goal: 100 coins
+
+A total of `r length(cgada$ID)` lives were played across `r length(dflist)` playtests. Thank you to all who participated!
 
 ## Class Data
 
@@ -222,7 +225,7 @@ suppressMessages(
 )
 ```
 
-## Map Data [WIP]
+## Map Data
 
 ```{r echo = FALSE}
 suppressMessages(
@@ -299,7 +302,7 @@ suppressMessages(
 )
 ```
 
-## Misc. [WIP]
+## Misc.
 
 ### Coins Over Time
 
@@ -323,24 +326,6 @@ The purpose of this plot is two-fold:
 1. The design of Cash Grab is such that that every time a player steps on a plate, 2 more coins enter the "economy" so to speak. As such, it is worth looking to see if the average number of coins earned changes over time in a meaningful way, as it could directly influence our other visualizations.
 
 2. It's fairly certain that the variance in kills should remain constant over time, as the general parameters of combat in cash grab do not change on a per-life basis. However, the coins that each player holds does change significantly, so it is far less certain how the coins per life will vary. By plotting this, we can get a general understanding of how the passage of time within each game effects the way players earn coins. Some characteristics to look for: lines on the plot branching out to higher and lower extremes as the sequential entry ID goes up (fanning or increasing variance over time), lines on the plot converging towards the average (funneling or decreasing variance over time), or a generally constant block that follows the same patterns that the average does (constant variance over time).
-
-```{r echo = FALSE}
-cgada |>
-  filter(Map == "Scald") |>
-  group_by(Game_ID) |>
-  ggplot(aes(x = seqID, y = Coins)) +
-  geom_point(color = "purple1") +
-  geom_line(color = "purple1") +
-  stat_summary(aes(group = 1), geom = "line", fun.y = mean, size = 1.5, color = "black") +
-  stat_summary(geom = "ribbon", fun.data = 'mean_sdl', mult = 1, color = "gray", alpha = 0.05) +
-  labs(title = "Coins Over Time (Scald)",
-       caption = "Bold line is the average across all games.
-       Surrounding ribbon represents bounds for values to remain within one standard deviation of the average.") +
-  scale_color_manual(labels = c("Alchemist", "Artillery", "Battlesmith", "Champion", "Chronomancer", 
-                  "Cloudbreaker", "Dancer", "Evincer", "Frost Knight", "Griefer", 
-                  "Hexblade", "Ranger", "Skirmisher", "Spectre", "Stargazer", 
-                  "Titan", "Vampire"), values = seq(1:17))
-```
 
 ### Kills per Entry versus Coins per Entry
 
@@ -387,10 +372,10 @@ suppressMessages(
   geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "black") +
   geom_vline(xintercept = sum(cgada$Kills) / nrow(cgada), color = "black") +
   theme(legend.position = "none") +
-  annotate(geom = "text", x = 0.45, y = 24.5, label = "Coin-specialized", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 1.17, y = 24.5, label = "High Event", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 0.45, y = 11, label = "Low Event", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 1.17, y = 11, label = "Kill-specialized", color = "black", alpha = 0.4)
+  annotate(geom = "text", x = 0.5, y = 24.5, label = "Coin-specialized", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 1.1, y = 24.5, label = "High Event", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 0.5, y = 11, label = "Low Event", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 1.1, y = 11, label = "Kill-specialized", color = "black", alpha = 0.4)
 )
 ```
 
