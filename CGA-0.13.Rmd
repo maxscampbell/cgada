@@ -259,4 +259,4 @@ ct.rank.sorted <- cbind(Rank, ct.rank.sorted)
 print(ct.rank.sorted[c(1:20),], row.names = FALSE)
 ```
 
-[Click here to return to the main page.](https://maxscampbell.github.io/cgada/)
+## [Click here to return to the main page.](https://maxstca.github.io/cgada/)
