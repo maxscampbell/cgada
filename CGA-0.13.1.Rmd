@@ -11,6 +11,22 @@ output:
     theme: lumen
 ---
 
+```{css, echo=FALSE}
+  body .main-container {
+    max-width: 1280px !important;
+    width: 1280px !important;
+    transform: scale(1.25);
+    transform-origin: top center;
+  }
+  body {
+    max-width: 1280px !important;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1.25);
+    transform-origin: top center;
+  }
+```
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 
