@@ -20,6 +20,8 @@ library(glue)
 library(purrr)
 library(tidyverse)
 library(ggforce)
+library(ggthemes)
+library(ggrepel)
 
 #Write functions to append the data more efficiently.
 read_in_data <- function(fileName, playtestDate = "99/99/9999", playtestVersion = "0.0.*", hasHeaders = FALSE) {
@@ -56,6 +58,8 @@ generate_seqID <- function(x) {
     ungroup()
   
 }
+
+theme_set(theme_clean()) #Set a default plot theme
 ```
 
 ```{r echo=FALSE}
@@ -317,7 +321,7 @@ suppressMessages(
   stat_summary(geom = "ribbon", fun.data = 'mean_sdl', mult = 1, color = "gray", alpha = 0.05) +
   labs(title = "Coins Over Time (All Maps)",
        caption = "Bold line is the average across all games.
-       Surrounding ribbon represents bounds for values to remain within one standard deviation of the average.") + xlab("Sequential Entry ID")
+       Ribbon indicates error bounds of one standard deviaton.") + xlab("Sequential Entry ID")
 )
 ```
 
@@ -366,16 +370,18 @@ suppressMessages(
          KPE = sum(Kills) / sum(Entry),
          CPE = sum(Coins) / sum(Entry)) |>
   ggplot(aes(x = KPE, y = CPE, color = Class, label = Class)) +
-  geom_point() + geom_text(hjust = 1, vjust = 1, check_overlap = FALSE) +
+  geom_point(position =) + geom_text_repel() +
   xlab("Kills per Entry") + ylab("Coins per Entry") +
   labs(title = "Class Specializations: Kills per Entry vs. Coins per Entry") +
-  geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "black") +
-  geom_vline(xintercept = sum(cgada$Kills) / nrow(cgada), color = "black") +
+  geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "gray") +
+  geom_vline(xintercept = sum(cgada$Kills) / nrow(cgada), color = "gray") +
   theme(legend.position = "none") +
-  annotate(geom = "text", x = 0.5, y = 24.5, label = "Coin-specialized", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 0.53, y = 24.5, label = "Coin-specialized", color = "black", alpha = 0.4) +
   annotate(geom = "text", x = 1.1, y = 24.5, label = "High Event", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 0.5, y = 11, label = "Low Event", color = "black", alpha = 0.4) +
-  annotate(geom = "text", x = 1.1, y = 11, label = "Kill-specialized", color = "black", alpha = 0.4)
+  annotate(geom = "text", x = 0.53, y = 11, label = "Low Event", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 1.1, y = 11, label = "Kill-specialized", color = "black", alpha = 0.4) +
+  theme(panel.grid.major.y = element_blank(),
+        panel.grid.minor = element_blank())
 )
 ```
 
